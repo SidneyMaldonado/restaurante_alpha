@@ -4,3 +4,6 @@ e Front-End em Agular do Node e JSON
 --------------------------------------
 Julho de 2021 - Em casa
 ------------
+
+
+Alterado Vander
