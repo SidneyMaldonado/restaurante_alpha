@@ -9,6 +9,10 @@ Julho de 2021 - Em casa
 
 Alterado Vander
 Alterado Matheus
+<<<<<<< HEAD
+=======
+Alterado Valber
+>>>>>>> b1eeb827dd12a234d9656611b7d633363c017d46
 =======
 
 
