@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Required;
+
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="prato")
 public class Prato {
@@ -15,8 +19,11 @@ public class Prato {
 	@Column(name="codigoprato")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer Codprato;
-	@Column(name="descricao")
+	
+	@NotNull
+	@Column(name="descricao", nullable = false)
 	private String Descricao;
+	
 	@Column(name="preco")
 	private Double Preco;
 	
@@ -26,6 +33,8 @@ public class Prato {
 	public void setCodprato(Integer codprato) {
 		Codprato = codprato;
 	}
+	
+	
 	public String getDescricao() {
 		return Descricao;
 	}
