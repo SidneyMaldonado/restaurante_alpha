@@ -37,7 +37,7 @@ public class ClienteLoginController {
 	} else {
 		autorizado.setAutorizado(false);
 	}
-	
+
 	return autorizado;
 	}
 
