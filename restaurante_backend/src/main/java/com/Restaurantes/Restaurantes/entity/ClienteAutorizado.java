@@ -1,5 +1,7 @@
 package com.Restaurantes.Restaurantes.entity;
 
+import java.util.List;
+
 public class ClienteAutorizado {
 
 	private Boolean autorizado;
@@ -11,4 +13,6 @@ public class ClienteAutorizado {
 	public void setAutorizado(Boolean autorizado) {
 		this.autorizado = autorizado;
 	}
+
+	
 }

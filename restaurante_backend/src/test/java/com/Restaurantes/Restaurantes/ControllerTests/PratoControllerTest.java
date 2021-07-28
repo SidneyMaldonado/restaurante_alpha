@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.Restaurantes.Restaurantes.controller.PratoController;
-import com.Restaurantes.Restaurantes.entity.Cliente;
 import com.Restaurantes.Restaurantes.entity.Prato;
 import com.Restaurantes.Restaurantes.repositorio.PratoRepositorio;
 
@@ -71,7 +70,7 @@ class PratoControllerTest {
 			fail("Erro ao testar incluir prato :" + ex.getMessage());
 		}
 	}
-	
+
 	@Test
 	void testAlterarPrato() {
 		
