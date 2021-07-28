@@ -50,7 +50,7 @@ public class UtilController {
 	// matheus
 	@GetMapping("qtd_clientes")
 	public int quant_cliente() {
-		return (int) clirepo.count();
+		return (int) getClirepo().count();
 	}
 			
 	// valber
@@ -63,6 +63,16 @@ public class UtilController {
 	@GetMapping("qtd_pedidos")
 	public int quant_pedido() {
 		return (int) pedrepo.count();
+	}
+
+
+	public ClienteRepositorio getClirepo() {
+		return clirepo;
+	}
+
+
+	public void setClirepo(ClienteRepositorio clirepo) {
+		this.clirepo = clirepo;
 	}
 	
 
