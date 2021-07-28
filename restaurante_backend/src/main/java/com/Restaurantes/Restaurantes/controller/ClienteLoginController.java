@@ -23,22 +23,22 @@ public class ClienteLoginController {
 	@PostMapping("logar")
 	public ClienteAutorizado logar(@RequestBody ClienteLogin autenticaCliente) {
 	
-	System.out.println(autenticaCliente.getCodCliente());
-	System.out.println(autenticaCliente.getSenha());
-	
+		System.out.println(autenticaCliente.getCodCliente());
+		System.out.println(autenticaCliente.getSenha());
 		
-	ClienteAutorizado autorizado = new ClienteAutorizado();
-	autorizado.setAutorizado(true);
-	
-	Cliente c = clientes.findById(autenticaCliente.getCodCliente()).get();
-	
-	if (c.getSenha().equals(autenticaCliente.getSenha())) {
+			
+		ClienteAutorizado autorizado = new ClienteAutorizado();
 		autorizado.setAutorizado(true);
-	} else {
-		autorizado.setAutorizado(false);
-	}
-	
-	return autorizado;
+		
+		Cliente c = clientes.findById(autenticaCliente.getCodCliente()).get();
+		
+		if (c.getSenha().equals(autenticaCliente.getSenha())) {
+			autorizado.setAutorizado(true);
+		} else {
+			autorizado.setAutorizado(false);
+		}
+		
+		return autorizado;
 	}
 
 }
