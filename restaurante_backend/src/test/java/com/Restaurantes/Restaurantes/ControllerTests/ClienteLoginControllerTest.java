@@ -5,11 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import com.Restaurantes.Restaurantes.controller.ClienteLoginController;
 import com.Restaurantes.Restaurantes.entity.ClienteAutorizado;
 import com.Restaurantes.Restaurantes.entity.ClienteLogin;
 
+@SpringBootTest
 class ClienteLoginControllerTest {
 
 	@Autowired
