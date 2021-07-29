@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Funcionario } from 'src/Funcionario';
+import { FuncionarioService } from '../funcionario.service';
 
 @Component({
   selector: 'app-listarfuncionario',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarfuncionarioComponent implements OnInit {
 
-  constructor() { }
+  funcionario: Funcionario[] = [];
+
+  constructor( private servico: FuncionarioService) { }
 
   ngOnInit(): void {
+
+    this.servico.listarfuncionario().subscribe(
+
+      dados => { this.funcionario = dados},
+      error => alert("Erro ao consultar dados!!")
+    )
   }
 
 }

@@ -1,1 +1,25 @@
-<p>listarfuncionario works!</p>
+<div class="container">
+
+    <h1>Lista de Funcionários</h1>       
+
+    <div id="demo" class="collapse"></div>
+    <table class="table table-light table-striped">
+      <thead>
+        <tr>
+          <th>Código do Funcionário</th>
+          <th>Nome</th>
+          <th>Salário</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let funcionario of funcionario">
+          <td>{{ funcionario.codigo }}</td>
+          <td>{{ funcionario.nome }}</td>
+          <td>R$ {{ funcionario.salario }}</td>
+
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>

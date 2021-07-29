@@ -1,1 +1,26 @@
-<p>incluirfuncionario works!</p>
+<div class="container">
+
+    <h1>Incluir Novo Funcionário</h1>     
+    <form method="post" #frm="ngForm" (ngSubmit) = "incluir(frm)">
+     
+        
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"
+            [(ngModel)] = "funcionario.nome" required>
+            &nbsp; 
+        </div>
+
+        <div class="form-group">
+            <label for="salario">Salário: </label>
+            <input type="text" name="salario" id="salario" class="form-control" placeholder="Salário"
+            [(ngModel)] = "funcionario.salario" required>
+            &nbsp; 
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">
+            Incluir
+        </button>
+
+    </form>
+</div>
