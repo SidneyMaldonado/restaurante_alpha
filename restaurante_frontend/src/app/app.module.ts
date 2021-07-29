@@ -12,6 +12,8 @@ import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturame
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
+import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
+import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.componen
     ListarFaturamentoComponent,
     ListarPratosIncluirPedidosComponent,
     AutenticacaoComponent,
-    IncluirPratosComponent
+    IncluirPratosComponent,
+    ListarProdutoComponent,
+    IncluirProdutoComponent
 
   ],
   imports: [

@@ -1,0 +1,36 @@
+ 
+<br>
+<div class="container" > <h1>Incluir Produto </h1>  
+    <form method="post" #frm="ngForm" (ngSubmit) = "incluir(frm)">
+     
+       
+        
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="nome"
+            [(ngModel)] = "produto.nome" required>
+            &nbsp; 
+        </div>
+
+        
+        <div class="form-group">
+            <label for="preco">Preço:</label>
+            <input type="text" name="preco" id="preco" class="form-control" placeholder="preco"
+            [(ngModel)] = "produto.preco" required>
+            &nbsp; 
+        </div>
+ 
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="text" name="quantidade" id="quantidade" class="form-control" placeholder="quantidade"
+            [(ngModel)] = "produto.quantidade" required>
+            &nbsp; 
+        </div>
+ 
+        <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">
+            Incluir
+        </button>
+
+    </form>
+</div>
