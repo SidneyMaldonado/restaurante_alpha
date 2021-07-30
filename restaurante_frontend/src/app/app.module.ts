@@ -14,6 +14,7 @@ import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.compo
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

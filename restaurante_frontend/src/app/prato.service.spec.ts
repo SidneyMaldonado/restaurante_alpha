@@ -6,7 +6,9 @@ describe('PratoService', () => {
   let service: PratoService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({imports:[HttpClientTestingModule]});
+    TestBed.configureTestingModule({
+      imports:[HttpClientTestingModule]
+    });
     service = TestBed.inject(PratoService);
   });
 
