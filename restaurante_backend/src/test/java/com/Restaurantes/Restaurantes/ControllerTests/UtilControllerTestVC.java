@@ -3,15 +3,20 @@ package com.Restaurantes.Restaurantes.ControllerTests;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.web.bind.annotation.GetMapping;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import com.Restaurantes.Restaurantes.controller.UtilController;
+import com.Restaurantes.Restaurantes.repositorio.PedidoRepositorio;
 
 @SpringBootTest
 class UtilControllerTestVC {
 
 	@Autowired
 	private UtilController controller;
+	@Autowired
+	private PedidoRepositorio pedrepo;
 	
 	
 	@Test
@@ -37,6 +42,26 @@ class UtilControllerTestVC {
 		}		         
 	}
 
+@Test
+void testqtd_Pedidos() {
+	try {
+		long expected = pedrepo.count();
+		int result = controller.quant_prato();
+			
+		System.out.print("Teste quantidade de pratos: esperado: " + expected + " obtido:" + result);
+		
+		
+		if ((int)expected == result) {
+			System.out.println("OK");
+		} else {
+			System.out.println("FAIL");
+		}
+		assertThat(expected).isEqualTo(result);
+		
+	}
+	catch (Exception msg) {
+		fail("Erro ao testar quantidade de pratos:" + msg.getMessage());
+	}
+	
 }
-
-
+}

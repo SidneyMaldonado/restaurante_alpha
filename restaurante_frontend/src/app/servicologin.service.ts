@@ -35,7 +35,7 @@ export class ServicologinService {
       return true;
     }
 
-    // testar 3
+    // testar 2
     usuarioNaoAutorizado( nome: string ){
       if (nome ==="beltrano"){
         return false;

@@ -21,4 +21,25 @@ describe('ServicologinService', () => {
      expect( result ).toEqual(expected);
   });
 
+  it('Testar função Login testarLogin()', () => {
+    let result = service.testarLogin("fulano", "65432");
+    let expected = true;
+
+    expect(result).toEqual(expected);
+  });
+
+  it('Usuário autorizado usuarioAutorizado()', () => {
+    let expected = true;
+    let result = service.usuarioAutorizado();
+
+    expect(result).toEqual(expected);
+  });
+
+  it('Usuário não autorizado usuarioNaoAutorizado()', () => {
+    let result = service.usuarioNaoAutorizado("beltrano");
+    let expected = false;
+
+    expect(result).toEqual(expected);
+  });
+
 });
