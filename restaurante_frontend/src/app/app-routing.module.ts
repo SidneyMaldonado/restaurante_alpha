@@ -10,6 +10,7 @@ import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-ped
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
+import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutoprato.component';
 import { PrincipalComponent } from './principal/principal.component';
 
 
@@ -25,7 +26,9 @@ const routes: Routes = [
 {path:'incluirpratos', component:IncluirPratosComponent},
 {path:'incluirproduto', component:IncluirProdutoComponent},
 {path:'listarproduto', component:ListarProdutoComponent},
-{path:'listasomapagocliente', component: ListarSomaPagoClienteComponent}
+{path:'listasomapagocliente', component: ListarSomaPagoClienteComponent},
+{path:'listarprodutoprato', component: ListarprodutopratoComponent},
+{path:'listarclienteordemalfabetica', component: ListarprodutopratoComponent}
 
 
 
