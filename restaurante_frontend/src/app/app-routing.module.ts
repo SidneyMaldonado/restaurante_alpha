@@ -8,6 +8,7 @@ import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.compo
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
+import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { PrincipalComponent } from './principal/principal.component';
 
@@ -23,7 +24,8 @@ const routes: Routes = [
 {path: "login", component: AutenticacaoComponent},
 {path:'incluirpratos', component:IncluirPratosComponent},
 {path:'incluirproduto', component:IncluirProdutoComponent},
-{path:'listarproduto', component:ListarProdutoComponent}
+{path:'listarproduto', component:ListarProdutoComponent},
+{path:'listasomapagocliente', component: ListarSomaPagoClienteComponent}
 
 
 

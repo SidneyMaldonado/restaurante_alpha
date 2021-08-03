@@ -25,6 +25,7 @@ describe('AddclienteComponent', () => {
   });
 
   it('should create', () => {
+    
     expect(component).toBeTruthy();
   });
 });

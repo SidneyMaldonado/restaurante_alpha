@@ -15,6 +15,7 @@ import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.componen
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { RouterModule } from '@angular/router';
+import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RouterModule } from '@angular/router';
     AutenticacaoComponent,
     IncluirPratosComponent,
     ListarProdutoComponent,
-    IncluirProdutoComponent
+    IncluirProdutoComponent,
+    ListarSomaPagoClienteComponent
 
   ],
   imports: [

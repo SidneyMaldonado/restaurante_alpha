@@ -1,0 +1,22 @@
+<div class="container">
+    <p>Listar Soma dos Valores Pagos por Cliente</p>   
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Nome</th>
+            <th>pago</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let view of viewSomaPagoClientes">
+            <td>{{view.codigoCliente}}</td>
+            <td>{{view.nome}}</td>
+            <td>{{view.somaPagamento}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
