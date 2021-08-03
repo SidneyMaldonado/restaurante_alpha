@@ -1,0 +1,18 @@
+<div class="container">
+    <p>Lista Contagem de pratos por pedido</p>   
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>quantidade</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let view of viewContaPratosPedidos">
+            <td>{{view.codigoPedido}}</td>
+            <td>{{view.quantidade}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

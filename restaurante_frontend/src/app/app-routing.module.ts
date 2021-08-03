@@ -5,10 +5,13 @@ import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
+import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutopreco.component';
+import { ListarContaPratosPedidosComponent } from './listar-conta-pratos-pedidos/listar-conta-pratos-pedidos.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
+import { ListarcontapratospedidosService } from './listarcontapratospedidos.service';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { PrincipalComponent } from './principal/principal.component';
 
@@ -25,7 +28,9 @@ const routes: Routes = [
 {path:'incluirpratos', component:IncluirPratosComponent},
 {path:'incluirproduto', component:IncluirProdutoComponent},
 {path:'listarproduto', component:ListarProdutoComponent},
-{path:'listasomapagocliente', component: ListarSomaPagoClienteComponent}
+{path:'listasomapagocliente', component: ListarSomaPagoClienteComponent},
+{path :'listacontapratopedido', component: ListarContaPratosPedidosComponent},
+{path :'listaprodutopreco', component: ListaprodutoprecoComponent}
 
 
 

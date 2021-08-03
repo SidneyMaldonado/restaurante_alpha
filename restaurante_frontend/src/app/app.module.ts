@@ -16,6 +16,8 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { RouterModule } from '@angular/router';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
+import { ListarContaPratosPedidosComponent } from './listar-conta-pratos-pedidos/listar-conta-pratos-pedidos.component';
+import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutopreco.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/lista
     IncluirPratosComponent,
     ListarProdutoComponent,
     IncluirProdutoComponent,
-    ListarSomaPagoClienteComponent
+    ListarSomaPagoClienteComponent,
+    ListarContaPratosPedidosComponent,
+    ListaprodutoprecoComponent
 
   ],
   imports: [
