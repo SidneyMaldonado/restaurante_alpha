@@ -16,6 +16,8 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { RouterModule } from '@angular/router';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
+import { ListarProdutosOrdemAlfaComponent } from './listar-produtos-ordem-alfa/listar-produtos-ordem-alfa.component';
+import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/lista
     IncluirPratosComponent,
     ListarProdutoComponent,
     IncluirProdutoComponent,
-    ListarSomaPagoClienteComponent
+    ListarSomaPagoClienteComponent,
+    ListarProdutosOrdemAlfaComponent,
+    ViewQtdPratosPedidoComponent
 
   ],
   imports: [
