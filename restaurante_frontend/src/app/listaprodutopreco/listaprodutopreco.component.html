@@ -1,0 +1,18 @@
+<div class="container">
+    <p>Lista Produtos por ordem de preço</p>   
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+                 
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let view of viewListaProdutoPreco">
+            <td>{{view.nome}}</td>
+            <td>{{view.preco}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
