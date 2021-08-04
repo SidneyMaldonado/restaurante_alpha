@@ -32,13 +32,11 @@ const routes: Routes = [
 {path:'incluirproduto', component:IncluirProdutoComponent},
 {path:'listarproduto', component:ListarProdutoComponent},
 {path:'listasomapagocliente', component: ListarSomaPagoClienteComponent},
-<<<<<<< HEAD
 {path :'listacontapratopedido', component: ListarContaPratosPedidosComponent},
-{path :'listaprodutopreco', component: ListaprodutoprecoComponent}
-=======
+{path :'listaprodutopreco', component: ListaprodutoprecoComponent},
 {path: 'qtdpratospedido', component: ViewQtdPratosPedidoComponent},
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent}
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
+
 
 
 

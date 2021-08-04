@@ -3,28 +3,28 @@ package com.Restaurantes.Restaurantes.ControllerTests;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.Console;
+
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-<<<<<<< HEAD
+
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
-=======
-import com.Restaurantes.Restaurantes.controller.FuncionarioController;
+
+
 import com.Restaurantes.Restaurantes.controller.ViewController;
-import com.Restaurantes.Restaurantes.entity.Funcionario;
+
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
-import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
+
 import com.Restaurantes.Restaurantes.repositorio.ViewTotalPratosPedidoRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewProdutosAlfa;
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
+
 import com.Restaurantes.Restaurantes.views.ViewSomaPagoCliente;
 import com.Restaurantes.Restaurantes.views.ViewTotalPratosPedido;
 
@@ -59,7 +59,7 @@ class ViewControllerTest {
 		
 	}
 	
-<<<<<<< HEAD
+
 	@Autowired
 	private ViewContaPratoPedidosRepositorio repositorios;
 	
@@ -77,7 +77,9 @@ class ViewControllerTest {
 			System.out.println("SUCCESS");
 		} else {
 			System.out.println("FAIL");
-=======
+		}
+	}
+
 	@Test
 	void testlistarTotalPratosPedido() {
 		try {
@@ -97,12 +99,13 @@ class ViewControllerTest {
 		}
 		catch (Exception msg){
 			fail("Erro ao testar o banco de dados" + msg.getMessage());
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
+
 		}
+
 		
 	}
 	
-<<<<<<< HEAD
+
 	@Autowired
 	private ViewListaProdutoPrecoRepositorio repo;
 	
@@ -127,7 +130,7 @@ class ViewControllerTest {
 
 	
 	
-=======
+
 	@Test
 	void testlistarProdutosAlfa() {
 		try {
@@ -149,6 +152,7 @@ class ViewControllerTest {
 			fail("Erro ao testar o banco de dados" + msg.getMessage());
 		}
 	}
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
+		
+
 
 }
