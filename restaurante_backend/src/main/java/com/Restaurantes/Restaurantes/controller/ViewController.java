@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+<<<<<<< HEAD
+import com.Restaurantes.Restaurantes.entity.ClientesOrdemAlfabetica;
+import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
+import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
+import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
+=======
 
 
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
@@ -14,7 +20,12 @@ import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositori
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> c5e7219f35a31d9b58618960fa4554d96986bdd7
+>>>>>>> d21b536ce342d8213db0e8cd1301afc6fc098e03
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
 
 import com.Restaurantes.Restaurantes.repositorio.ViewTotalPratosPedidoRepositorio;
@@ -33,11 +44,17 @@ public class ViewController {
 	@Autowired
 	private ViewSomaPagoClienteRepositorio repositorio;
 	@Autowired
+ 
+	private ClientesOrdemAlfabeticaRepositorio repo;
+	@Autowired
+	private QtdProdutosPratosRepositorio reposi;
+ 
 	private ViewTotalPratosPedidoRepositorio totalPratos;
 	@Autowired
 	private ViewProdutosAlfaRepositorio produtosAlfa;
 	
 	
+ 
 	
 	@GetMapping("listarSomaPagoCliente")
 	public List<ViewSomaPagoCliente> listarSomaPagoCliente(){
@@ -69,10 +86,19 @@ public class ViewController {
 		
 		
 	
+<<<<<<< HEAD
+
+	@GetMapping("ListarClientesOrdemAlfabetica")
+	public List<ClientesOrdemAlfabetica> listarClientesOrdem(){
+		
+		return repo.findAll();
+	}
+=======
 	
 	
 
 	
+>>>>>>> c5e7219f35a31d9b58618960fa4554d96986bdd7
 	@GetMapping("totalpratospedido")
 	public List<ViewTotalPratosPedido> listarTotalPratosPedido(){
 		
@@ -85,9 +111,26 @@ public class ViewController {
 		
 		return produtosAlfa.findAll();
 		
+
 	}
 }
 		
 	
 
 
+<<<<<<< HEAD
+	@GetMapping("listarprodutospratos")
+	public List<QtdProdutosPratos> listarQtdprodutospagos(){
+		
+		return reposi.findAll();
+		
+	}
+}
+
+
+
+ 
+
+	 
+=======
+>>>>>>> c5e7219f35a31d9b58618960fa4554d96986bdd7

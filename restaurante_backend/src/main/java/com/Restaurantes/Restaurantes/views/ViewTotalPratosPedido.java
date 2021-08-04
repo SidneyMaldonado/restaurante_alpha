@@ -6,14 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="vw_qtd_pratos_pedido")
+@Table(name="quantidade_pratos_por_pedido")
 public class ViewTotalPratosPedido {
 	
 	@Id
-	@Column(name="codigopedido")
+	@Column(name="codigpedido")
 	private Integer codigoPedido;
 	
-	@Column(name="quantidade_pratos")
+	@Column(name="quantidadepratospedidos")
 	private Integer quantidadePratos;
 
 	public Integer getCodigoPedido() {

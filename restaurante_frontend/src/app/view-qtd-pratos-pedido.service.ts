@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ViewQtdPratosPedido } from 'src/entidades/ViewQtdPratosPedido';
-import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
+
 
 @Injectable({
   providedIn: 'root'
