@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Restaurantes.Restaurantes.entity.ClientesOrdemAlfabetica;
+import com.Restaurantes.Restaurantes.entity.ProdutoFuncionario;
 import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
 import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
+import com.Restaurantes.Restaurantes.repositorio.ProdutoFuncionarioRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
@@ -43,7 +45,10 @@ public class ViewController {
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;	
     @Autowired
 	private ViewContaPratoPedidosRepositorio repositorios;
-	
+	@Autowired
+	private ProdutoFuncionarioRepositorio produtofunrepositorio; 
+    
+    
 	@GetMapping("listarSomaPagoCliente")
 	public List<ViewSomaPagoCliente> listarSomaPagoCliente(){
 		
@@ -86,6 +91,12 @@ public class ViewController {
 		
 		return reposi.findAll();
 		
+	}
+	
+	@GetMapping ("listarprodutofuncionario")
+	public List<ProdutoFuncionario> listarprodutofuncionario(){
+		
+		return produtofunrepositorio.findAll();
 	}
 }
 
