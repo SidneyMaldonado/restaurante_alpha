@@ -12,7 +12,6 @@ import com.Restaurantes.Restaurantes.entity.ClientesOrdemAlfabetica;
 import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
 import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
-
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
@@ -80,10 +79,8 @@ public class ViewController {
 	public List<ViewProdutosAlfa> listarProdutosAlfa(){
 		
 		return produtosAlfa.findAll();
-		
-
 	}
-
+	
 	@GetMapping("listarprodutospratos")
 	public List<QtdProdutosPratos> listarQtdprodutospagos(){
 		

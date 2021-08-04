@@ -10,13 +10,13 @@ import { ListarcontapratospedidosService } from '../listarcontapratospedidos.ser
 export class ListarContaPratosPedidosComponent implements OnInit {
 
 
-  public viewContaPratosPedidos: ListarcontapratospedidosService[] = [];
+  public viewContaPratosPedidos: ViewContaPratosPedidos[] = [];
 
-  constructor(  private melancia: ListarcontapratospedidosService) { }
+  constructor(  private servico: ListarcontapratospedidosService) { }
 
   ngOnInit(): void {
 
-    this.melancia.listarContaPratoPedidos().subscribe(
+    this.servico.listarContaPratoPedidos().subscribe(
       dados => this.viewContaPratosPedidos = dados,
       error => console.log("Erro ao recuperar dados")
     )

@@ -41,7 +41,10 @@ const routes: Routes = [
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent}
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> d21b536ce342d8213db0e8cd1301afc6fc098e03
 
 
 

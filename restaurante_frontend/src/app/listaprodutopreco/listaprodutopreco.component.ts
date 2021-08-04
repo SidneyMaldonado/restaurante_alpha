@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewListaProdutoPreco } from 'src/entidades/ViewListaProdutoPreco';
 import { ListaprodutoprecoService } from '../listaprodutopreco.service';
+
 
 @Component({
   selector: 'app-listaprodutopreco',
@@ -9,14 +11,14 @@ import { ListaprodutoprecoService } from '../listaprodutopreco.service';
 export class ListaprodutoprecoComponent implements OnInit {
 
 
-  public viewListarProdutoPreco: ListaprodutoprecoService[] = [];
+  public viewListaProdutoPreco: ViewListaProdutoPreco[] = [];
 
-  constructor( private uva : ListaprodutoprecoService) { }
+  constructor( private service: ListaprodutoprecoService) { }
 
   ngOnInit(): void {
 
-    this.uva.listarProdutoPreco().subscribe(
-      dados => this.viewListarProdutoPreco = dados,
+    this.service.listarProdutoPreco().subscribe(
+      dados => this.viewListaProdutoPreco = dados,
       error => console.log("Erro ao recuperar dados")
     )
   }
