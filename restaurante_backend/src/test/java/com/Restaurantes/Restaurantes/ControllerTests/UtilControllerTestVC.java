@@ -17,51 +17,46 @@ class UtilControllerTestVC {
 	private UtilController controller;
 	@Autowired
 	private PedidoRepositorio pedrepo;
-	
-	
+
 	@Test
 	void testPi() {
-		
-		try {	
-		      double expected;
-		      expected = 3.14159;
-		      
-		      double result = controller.pi();
-		      
-		      System.out.print("Teste ControllerPi: esperado: " + expected + " obtido:" + result);
-		      if (expected == result) {
-					System.out.println(" OK");
-				} else {
-					System.out.println(" FAIL");
-				}
-		      assertThat(expected).isEqualTo(result);
-		      
-		      
+
+		try {
+			double expected;
+			expected = 3.14159;
+
+			double result = controller.pi();
+
+			System.out.print("Teste ControllerPi: esperado: " + expected + " obtido:" + result);
+			if (expected == result) {
+				System.out.println(" OK");
+			} else {
+				System.out.println(" FAIL");
+			}
+			assertThat(expected).isEqualTo(result);
+
 		} catch (Exception ex) {
 			fail("Erro ao testar o pi:" + ex.getMessage());
-		}		         
+		}
 	}
 
-@Test
-void testqtd_Pedidos() {
-	try {
-		long expected = pedrepo.count();
-		int result = controller.quant_prato();
-			
-		System.out.print("Teste quantidade de pratos: esperado: " + expected + " obtido:" + result);
-		
-		
-		if ((int)expected == result) {
-			System.out.println("OK");
-		} else {
-			System.out.println("FAIL");
+	@Test
+	void testqtd_Pedidos() {
+		try {
+			long expected = pedrepo.count();
+			int result = controller.quant_pedido();
+
+			System.out.print("Teste quantidade de Pedidos: esperado: " + expected + " obtido:" + result);
+
+			if ((int) expected == result) {
+				System.out.println("OK");
+			} else {
+				System.out.println("FAIL");
+			}
+			assertThat(expected).isEqualTo(result);
+		} catch (Exception msg) {
+			fail("Erro ao testar quantidade de Pedidos:" + msg.getMessage());
 		}
-		assertThat(expected).isEqualTo(result);
-		
 	}
-	catch (Exception msg) {
-		fail("Erro ao testar quantidade de pratos:" + msg.getMessage());
-	}
-	
-}
+
 }

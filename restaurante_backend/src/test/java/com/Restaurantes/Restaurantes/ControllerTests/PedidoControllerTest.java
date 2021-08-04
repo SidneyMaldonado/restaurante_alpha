@@ -59,20 +59,19 @@ class PedidoControllerTest {
 			novo.setQuantidade(1.0);
 			novo.setPreco(5.0);
 			novo.setPronto(true);
+			novo.setCodigoFuncionario(1);
 			
-			repositorio.save(novo);
-			repositorio.flush();
+			controller.incluir(novo);
 			
 			long result = repositorio.count();
 			assertThat(expected).isEqualTo(result);
 			
 			if(expected == result) {
 				System.out.println("Teste incluir Pedido validado!");
+			} else {
+				System.out.println("Resultado errado: esperado " + expected + " resultado " + result);
 			}
-			else {
-				System.out.println("Teste incluir Pedido falhou");
-			}
-						
+				
 		}
 		catch (Exception msg) {
 			fail("Erro ao testar incluir pedido: " +msg.getMessage());

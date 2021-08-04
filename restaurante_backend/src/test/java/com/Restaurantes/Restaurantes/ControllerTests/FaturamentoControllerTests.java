@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.Restaurantes.Restaurantes.controller.FaturamentoController;
+import com.Restaurantes.Restaurantes.controller.ResultadoController;
+import com.Restaurantes.Restaurantes.controller.ViewController;
 import com.Restaurantes.Restaurantes.entity.Faturamento;
 import com.Restaurantes.Restaurantes.repositorio.FaturamentoRepositorio;
 
@@ -20,6 +22,8 @@ class FaturamentoControllerTest {
 	private FaturamentoRepositorio faturamentoRepositorio;
 	@Autowired
 	private FaturamentoController controller;
+	@Autowired
+	private ResultadoController resultadoController;
 
 	@Test
 	void testListarFaturamento() {
@@ -43,6 +47,30 @@ class FaturamentoControllerTest {
 			     assertThat(expected).isEqualTo(result);			   
 		} catch (Exception ex) {
 			     fail("Erro ao testar o listarFaturamento:" + ex.getMessage());
+		}
+		
+	}
+	
+	@Test
+	void testTotalFaturamentos() {
+		
+		
+		try {			
+			double soma = 0;
+			List<Faturamento> faturamentos = faturamentoRepositorio.findAll();
+			for(Faturamento f: faturamentos) {
+				soma += f.getValorpago();
+			}
+			
+			System.out.println("Teste de faturamento: soma="+soma);
+			 double expected = soma;
+			 double result = resultadoController.totalFaturamento();
+			
+			assertThat(expected).isEqualTo(result);
+		} catch (Exception ex){
+			fail("Erro ao testar o banco de dados: " +ex.getMessage());
+			
+			
 		}
 		
 	}

@@ -31,6 +31,15 @@ public class Pedido {
 	@Column(name="pronto")
 	private Boolean Pronto;
 	
+	@Column(name="codigofuncionario")
+	private Integer codigoFuncionario;
+	
+	public Integer getCodigoFuncionario() {
+		return codigoFuncionario;
+	}
+	public void setCodigoFuncionario(Integer codigoFuncionario) {
+		this.codigoFuncionario = codigoFuncionario;
+	}
 	public Integer getCodigoPedido() {
 		return CodigoPedido;
 	}

@@ -24,7 +24,6 @@ class PagamentoControllerTest {
 			
 			Pagamento novo = new Pagamento();
 			novo.setCodigopagamento(0);
-			novo.setCodigocliente(1);
 			novo.setCodigopedido(3);
 			novo.setValorpago(15.5);
 			
