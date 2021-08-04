@@ -16,8 +16,13 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { RouterModule } from '@angular/router';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
+<<<<<<< HEAD
 import { ListarContaPratosPedidosComponent } from './listar-conta-pratos-pedidos/listar-conta-pratos-pedidos.component';
 import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutopreco.component';
+=======
+import { ListarProdutosOrdemAlfaComponent } from './listar-produtos-ordem-alfa/listar-produtos-ordem-alfa.component';
+import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
+>>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 
 @NgModule({
   declarations: [
@@ -33,8 +38,13 @@ import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutoprec
     ListarProdutoComponent,
     IncluirProdutoComponent,
     ListarSomaPagoClienteComponent,
+<<<<<<< HEAD
     ListarContaPratosPedidosComponent,
     ListaprodutoprecoComponent
+=======
+    ListarProdutosOrdemAlfaComponent,
+    ViewQtdPratosPedidoComponent
+>>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 
   ],
   imports: [

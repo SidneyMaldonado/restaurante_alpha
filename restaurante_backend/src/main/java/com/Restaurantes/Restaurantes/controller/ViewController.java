@@ -8,12 +8,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+<<<<<<< HEAD
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
+=======
+import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
+import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
+import com.Restaurantes.Restaurantes.repositorio.ViewTotalPratosPedidoRepositorio;
+import com.Restaurantes.Restaurantes.views.ViewProdutosAlfa;
+>>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 import com.Restaurantes.Restaurantes.views.ViewSomaPagoCliente;
+import com.Restaurantes.Restaurantes.views.ViewTotalPratosPedido;
 
 @RestController
 @RequestMapping("views")
@@ -24,6 +32,11 @@ public class ViewController {
 	
 	@Autowired
 	private ViewSomaPagoClienteRepositorio repositorio;
+	@Autowired
+	private ViewTotalPratosPedidoRepositorio totalPratos;
+	@Autowired
+	private ViewProdutosAlfaRepositorio produtosAlfa;
+	
 	
 	
 	@GetMapping("listarSomaPagoCliente")
@@ -42,6 +55,7 @@ public class ViewController {
 			
 		return repo.findAll();
 	}
+<<<<<<< HEAD
 		
 		
     @Autowired
@@ -57,4 +71,20 @@ public class ViewController {
 	}
 	
 	
+=======
+	
+	@GetMapping("totalpratospedido")
+	public List<ViewTotalPratosPedido> listarTotalPratosPedido(){
+		
+		return totalPratos.findAll();
+		
+	}
+	
+	@GetMapping("produtosordemalfabetica")
+	public List<ViewProdutosAlfa> listarProdutosAlfa(){
+		
+		return produtosAlfa.findAll();
+		
+	}
+>>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 
