@@ -3,50 +3,44 @@ package com.Restaurantes.Restaurantes.ControllerTests;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.Console;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-<<<<<<< HEAD
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
-=======
-import com.Restaurantes.Restaurantes.controller.FuncionarioController;
 import com.Restaurantes.Restaurantes.controller.ViewController;
-import com.Restaurantes.Restaurantes.entity.Funcionario;
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
-import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewTotalPratosPedidoRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewProdutosAlfa;
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 import com.Restaurantes.Restaurantes.views.ViewSomaPagoCliente;
 import com.Restaurantes.Restaurantes.views.ViewTotalPratosPedido;
 
 @SpringBootTest
 class ViewControllerTest {
 
-	
+	 
 	@Autowired
-	private ViewSomaPagoClienteRepositorio repositorio;
+	private ViewSomaPagoClienteRepositorio pagoClienteRepositorio;
 	@Autowired
 	private ViewTotalPratosPedidoRepositorio totalPratos;
 	@Autowired
 	private ViewProdutosAlfaRepositorio produtosAlfa;
 	@Autowired
 	private ViewController controller;
-	
+	@Autowired
+	private ViewContaPratoPedidosRepositorio pratoPedidoRepositorio;
 	
 	@Test
 	void testlistarSomaPagoCliente() {
 		
-		float expected = repositorio.count();
-		List<ViewSomaPagoCliente> registros = repositorio.findAll();
+		float expected = pagoClienteRepositorio.count();
+		List<ViewSomaPagoCliente> registros = pagoClienteRepositorio.findAll();
 		float result = registros.size();
 		
 		assertThat( result ).isEqualTo(expected);
@@ -59,16 +53,11 @@ class ViewControllerTest {
 		
 	}
 	
-<<<<<<< HEAD
-	@Autowired
-	private ViewContaPratoPedidosRepositorio repositorios;
-	
-	
 	@Test
 	void testlistarContaPratoPedidos() {
 		
-		float expected = repositorios.count();
-		List<ViewContaPratoPedidos> registros = repositorios.findAll();
+		float expected = pratoPedidoRepositorio.count();
+		List<ViewContaPratoPedidos> registros = pratoPedidoRepositorio.findAll();
 		float result = registros.size();
 		
 		assertThat( result ).isEqualTo(expected);
@@ -77,7 +66,8 @@ class ViewControllerTest {
 			System.out.println("SUCCESS");
 		} else {
 			System.out.println("FAIL");
-=======
+		}
+	}
 	@Test
 	void testlistarTotalPratosPedido() {
 		try {
@@ -94,24 +84,21 @@ class ViewControllerTest {
 			
 			assertThat(expected).isEqualTo(result);
 			
-		}
-		catch (Exception msg){
+		} catch (Exception msg){
 			fail("Erro ao testar o banco de dados" + msg.getMessage());
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 		}
 		
 	}
 	
-<<<<<<< HEAD
 	@Autowired
-	private ViewListaProdutoPrecoRepositorio repo;
+	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;
 	
 	
 	@Test
 	void testlistarProdutoPreco() {
 		
-		float expected = repo.count();
-		List<ViewListaProdutoPreco> registros = repo.findAll();
+		float expected = produtoPrecoRepositorio.count();
+		List<ViewListaProdutoPreco> registros = produtoPrecoRepositorio.findAll();
 		float result = registros.size();
 		
 		assertThat( result ).isEqualTo(expected);
@@ -124,10 +111,6 @@ class ViewControllerTest {
 		
 	}
 	
-
-	
-	
-=======
 	@Test
 	void testlistarProdutosAlfa() {
 		try {
@@ -149,6 +132,4 @@ class ViewControllerTest {
 			fail("Erro ao testar o banco de dados" + msg.getMessage());
 		}
 	}
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
-
 }

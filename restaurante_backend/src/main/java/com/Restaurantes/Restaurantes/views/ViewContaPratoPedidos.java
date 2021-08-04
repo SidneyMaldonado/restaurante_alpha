@@ -10,14 +10,14 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "vw_conta_prato_pedidos")
+@Table(name = "vw_conta_prato_pedido")
 public class ViewContaPratoPedidos {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="codigopedido")
+	@Column(name="codigpedido")
 	private int codigoPedido;
-	@Column(name="quantidade")
+	@Column(name="quantidadepratospedidos")
 	private int quantidade;
 	public int getCodigoPedido() {
 		return codigoPedido;

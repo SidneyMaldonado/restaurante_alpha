@@ -17,7 +17,7 @@ import com.Restaurantes.Restaurantes.repositorio.FaturamentoRepositorio;
 class FaturamentoControllerTest {
 	
 	@Autowired
-	private FaturamentoRepositorio repo;
+	private FaturamentoRepositorio faturamentoRepositorio;
 	@Autowired
 	private FaturamentoController controller;
 
@@ -27,7 +27,7 @@ class FaturamentoControllerTest {
 		try {
 			   
 			   long expected;
-			   expected = repo.count();
+			   expected = faturamentoRepositorio.count();
 			   
 			   List<Faturamento> lista = controller.listarfaturamento();
 			   long result = (long)lista.size();
@@ -47,4 +47,4 @@ class FaturamentoControllerTest {
 		
 	}
 		
-	}
+}

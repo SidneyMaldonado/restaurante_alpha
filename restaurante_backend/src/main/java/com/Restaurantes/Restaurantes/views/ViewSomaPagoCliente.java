@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "vw_soma_pago_cliente")
+@Table(name = "vw_pagamento_cliente")
 public class ViewSomaPagoCliente {
 
 	public int getCodigoCliente() {
@@ -35,7 +35,7 @@ public class ViewSomaPagoCliente {
 	private int codigoCliente;
 	@Column(name="nome")
 	private String nome;
-	@Column(name="somapagamento")
+	@Column(name="valorpago")
 	private Double somaPagamento;
 	
 }

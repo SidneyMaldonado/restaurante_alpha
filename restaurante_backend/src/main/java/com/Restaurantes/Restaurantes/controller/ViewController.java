@@ -7,26 +7,20 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-<<<<<<< HEAD
+
 import com.Restaurantes.Restaurantes.entity.ClientesOrdemAlfabetica;
 import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
 import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
-=======
 
-<<<<<<< HEAD
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
-=======
->>>>>>> c5e7219f35a31d9b58618960fa4554d96986bdd7
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
-import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewTotalPratosPedidoRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewProdutosAlfa;
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 import com.Restaurantes.Restaurantes.views.ViewSomaPagoCliente;
 import com.Restaurantes.Restaurantes.views.ViewTotalPratosPedido;
 
@@ -34,23 +28,22 @@ import com.Restaurantes.Restaurantes.views.ViewTotalPratosPedido;
 @RequestMapping("views")
 @CrossOrigin(origins = {"http://localhost:4200", "http://localhost:9876"} )
 
-
 public class ViewController {
 	
 	@Autowired
 	private ViewSomaPagoClienteRepositorio repositorio;
-	@Autowired
- 
+	@Autowired 
 	private ClientesOrdemAlfabeticaRepositorio repo;
 	@Autowired
 	private QtdProdutosPratosRepositorio reposi;
- 
+ 	@Autowired
 	private ViewTotalPratosPedidoRepositorio totalPratos;
 	@Autowired
 	private ViewProdutosAlfaRepositorio produtosAlfa;
-	
-	
- 
+    @Autowired
+	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;	
+    @Autowired
+	private ViewContaPratoPedidosRepositorio repositorios;
 	
 	@GetMapping("listarSomaPagoCliente")
 	public List<ViewSomaPagoCliente> listarSomaPagoCliente(){
@@ -58,43 +51,24 @@ public class ViewController {
 		return repositorio.findAll();
 	}
 		
-		
-    @Autowired
-	private ViewListaProdutoPrecoRepositorio repo;
-		
-		
 	@GetMapping("listarProdutoPreco")
 	public List<ViewListaProdutoPreco> listarProdutoPreco(){
 			
-		return repo.findAll();
+		return produtoPrecoRepositorio.findAll();
 	}
-<<<<<<< HEAD
-		
-		
-    @Autowired
-	private ViewContaPratoPedidosRepositorio repositorios;
-			
+
     @GetMapping("listarContaPratoPedidos")
 	public List<ViewContaPratoPedidos> listarContaPratoPedidos(){
 				
 		return repositorios.findAll();
     }
 		
-		
-	}
-	
-<<<<<<< HEAD
-
 	@GetMapping("ListarClientesOrdemAlfabetica")
 	public List<ClientesOrdemAlfabetica> listarClientesOrdem(){
 		
 		return repo.findAll();
 	}
-=======
-	
-=======
-	
->>>>>>> c5e7219f35a31d9b58618960fa4554d96986bdd7
+
 	@GetMapping("totalpratospedido")
 	public List<ViewTotalPratosPedido> listarTotalPratosPedido(){
 		
@@ -109,9 +83,7 @@ public class ViewController {
 		
 
 	}
->>>>>>> fb72318d83c5ee2479d32f01a6246d4bbeeb6fd9
 
-<<<<<<< HEAD
 	@GetMapping("listarprodutospratos")
 	public List<QtdProdutosPratos> listarQtdprodutospagos(){
 		
@@ -120,10 +92,3 @@ public class ViewController {
 	}
 }
 
-
-
- 
-
-	 
-=======
->>>>>>> c5e7219f35a31d9b58618960fa4554d96986bdd7

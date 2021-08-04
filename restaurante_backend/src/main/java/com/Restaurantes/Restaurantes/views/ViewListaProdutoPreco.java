@@ -13,6 +13,9 @@ public class ViewListaProdutoPreco {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="codigo")
+	private Integer codigo;
+	
 	@Column(name="nome")
 	private String nome;
 	@Column(name="preco")

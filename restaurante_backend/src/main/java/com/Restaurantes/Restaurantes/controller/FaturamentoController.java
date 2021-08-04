@@ -13,7 +13,7 @@ import com.Restaurantes.Restaurantes.repositorio.FaturamentoRepositorio;
 
 @RestController
 @RequestMapping("faturamento")
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:9876"} )
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:9876", "http://localhost:8080"} )
 public class FaturamentoController {
     
 	@Autowired
