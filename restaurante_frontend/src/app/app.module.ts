@@ -15,9 +15,12 @@ import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.componen
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { RouterModule } from '@angular/router';
-import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
+import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component'; 
 import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutoprato.component';
 import { ListarclienteordemalfabeticaComponent } from './listarclienteordemalfabetica/listarclienteordemalfabetica.component';
+import { ListarProdutosOrdemAlfaComponent } from './listar-produtos-ordem-alfa/listar-produtos-ordem-alfa.component';
+import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
+ 
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { ListarclienteordemalfabeticaComponent } from './listarclienteordemalfab
     IncluirProdutoComponent,
     ListarSomaPagoClienteComponent,
     ListarprodutopratoComponent,
-    ListarclienteordemalfabeticaComponent
+    ListarclienteordemalfabeticaComponent,
+    ListarProdutosOrdemAlfaComponent,
+    ViewQtdPratosPedidoComponent
+ 
 
   ],
   imports: [
