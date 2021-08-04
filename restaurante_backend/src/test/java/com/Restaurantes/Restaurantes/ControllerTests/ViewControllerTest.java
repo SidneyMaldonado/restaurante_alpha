@@ -8,9 +8,12 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.Restaurantes.Restaurantes.repositorio.ViewClientesAtendidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
+import com.Restaurantes.Restaurantes.views.ViewClientesAtendidos;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
 import com.Restaurantes.Restaurantes.controller.ViewController;
@@ -36,6 +39,8 @@ class ViewControllerTest {
 	private ViewContaPratoPedidosRepositorio pratoPedidoRepositorio;
 	@Autowired
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;
+	@Autowired
+    private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
 
 	
 	@Test
@@ -130,6 +135,28 @@ class ViewControllerTest {
 		}
 		catch (Exception msg){
 			fail("Erro ao testar o banco de dados" + msg.getMessage());
+		}
+	}
+	
+	@Test
+	void testlistarClientesAtendidos() {
+		try {
+			long expected = clientesAtendidosRepositorio.count();
+			List<ViewClientesAtendidos>lista = controller.listarClientesAtendidos();
+			long result = (long)lista.size();
+			System.out.println("Teste de listar clientes atendidos por funcionário: \nEsperado: "+ expected + "\nObtido: "+ result);
+			
+			if(expected == result) {
+				System.out.println("Teste Ok");
+			} else {
+				System.out.println("Fail");
+			}
+			
+			assertThat(expected).isEqualTo(result);
+			
+		}
+		catch (Exception msg){
+			fail("Erro ao testar o listar!" + msg.getMessage());
 		}
 	}
 }

@@ -52,9 +52,9 @@ class FuncionarioControllerTest {
 			novo.setCodigo(0);
 			novo.setNome("teste");
 			novo.setSalario(100.11);
+			novo.setCodigoSetor(2);
 			
-			repositorio.save(novo);
-			repositorio.flush();
+			controller.incluir(novo);
 			
 			long result = repositorio.count();
 			assertThat(expected).isEqualTo(result);

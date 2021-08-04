@@ -14,9 +14,11 @@ import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
 import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ProdutoFuncionarioRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
+import com.Restaurantes.Restaurantes.repositorio.ViewClientesAtendidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
+import com.Restaurantes.Restaurantes.views.ViewClientesAtendidos;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
@@ -45,10 +47,16 @@ public class ViewController {
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;	
     @Autowired
 	private ViewContaPratoPedidosRepositorio repositorios;
+<<<<<<< HEAD
 	@Autowired
 	private ProdutoFuncionarioRepositorio produtofunrepositorio; 
     
     
+=======
+    @Autowired
+    private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
+	
+>>>>>>> dc11244d8cda1d459b8c4d2b78b04e6b05c9d7a8
 	@GetMapping("listarSomaPagoCliente")
 	public List<ViewSomaPagoCliente> listarSomaPagoCliente(){
 		
@@ -93,10 +101,17 @@ public class ViewController {
 		
 	}
 	
+<<<<<<< HEAD
 	@GetMapping ("listarprodutofuncionario")
 	public List<ProdutoFuncionario> listarprodutofuncionario(){
 		
 		return produtofunrepositorio.findAll();
+=======
+	 @GetMapping("listarClientesAtendidos")
+	public List<ViewClientesAtendidos> listarClientesAtendidos(){
+					
+		return clientesAtendidosRepositorio.findAll();
+>>>>>>> dc11244d8cda1d459b8c4d2b78b04e6b05c9d7a8
 	}
 }
 
