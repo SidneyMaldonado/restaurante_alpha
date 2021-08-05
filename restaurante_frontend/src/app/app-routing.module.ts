@@ -18,6 +18,7 @@ import { ListarclienteordemalfabeticaComponent } from './listarclienteordemalfab
 import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutoprato.component';
+import { ListarsetorComponent } from './listarsetor/listarsetor.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
 
@@ -43,7 +44,8 @@ const routes: Routes = [
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
-{path: 'incluirfuncionario', component: IncluirfuncionarioComponent}
+{path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
+{path: 'listasetor', component: ListarsetorComponent}
 
 ];
 
