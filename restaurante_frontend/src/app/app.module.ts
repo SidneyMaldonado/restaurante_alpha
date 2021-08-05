@@ -22,6 +22,8 @@ import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-
 import { ListarContaPratosPedidosComponent } from './listar-conta-pratos-pedidos/listar-conta-pratos-pedidos.component';
 import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutopreco.component';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
+import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
+import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/lista
     ListarclienteordemalfabeticaComponent,
     ListarProdutosOrdemAlfaComponent,
     ViewQtdPratosPedidoComponent,
-    ListaprodutoprecoComponent
+    ListaprodutoprecoComponent,
+    ListarfuncionarioComponent,
+    IncluirfuncionarioComponent
 
   ],
   imports: [

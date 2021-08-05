@@ -6,6 +6,7 @@ import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
+import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
 import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutopreco.component';
 import { ListarContaPratosPedidosComponent } from './listar-conta-pratos-pedidos/listar-conta-pratos-pedidos.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
@@ -14,6 +15,7 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
 import { ListarProdutosOrdemAlfaComponent } from './listar-produtos-ordem-alfa/listar-produtos-ordem-alfa.component';
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
 import { ListarclienteordemalfabeticaComponent } from './listarclienteordemalfabetica/listarclienteordemalfabetica.component';
+import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutoprato.component';
 import { PrincipalComponent } from './principal/principal.component';
@@ -39,7 +41,9 @@ const routes: Routes = [
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path:'listarclienteordemalfabetica', component: ListarclienteordemalfabeticaComponent},
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
-{path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent}
+{path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
+{path: 'listarfuncionario', component:  ListarfuncionarioComponent},
+{path: 'incluirfuncionario', component: IncluirfuncionarioComponent}
 
 ];
 
