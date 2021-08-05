@@ -23,9 +23,7 @@ export class AutenticacaoComponent implements OnInit {
   constructor( private servico: ServicologinService, router: Router) { this.router = router; }
  
   ngOnInit(): void {
-
-
-    
+  
   }
 
   public autenticar(frm: NgForm){
@@ -45,8 +43,13 @@ export class AutenticacaoComponent implements OnInit {
     // se a senha estiver correta
     if (this.autorizado.autorizado){
       // redirecionar para o componente principal
+ 
        this.router.navigate([]);
         
+ 
+      alert("Acesso Autorizado!")
+       this.router.navigate([""]);
+ 
 
     } else {
        alert('Acesso não autorizado');

@@ -25,6 +25,9 @@ import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/lista
 import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
 import { ListarprodfuncionarioComponent } from './listarprodfuncionario/listarprodfuncionario.component';
+import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
+import { ListarsetorComponent } from './listarsetor/listarsetor.component';
+ 
 
 
 @NgModule({
@@ -49,8 +52,11 @@ import { ListarprodfuncionarioComponent } from './listarprodfuncionario/listarpr
     ListaprodutoprecoComponent,
     ListarfuncionarioComponent,
     IncluirfuncionarioComponent,
-    ListarprodfuncionarioComponent
-     
+    ListarprodfuncionarioComponent,
+    ClientesatendidosComponent,
+    ListarsetorComponent
+    
+ 
 
   ],
   imports: [

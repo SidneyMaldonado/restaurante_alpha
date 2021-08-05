@@ -1,5 +1,5 @@
 <div class="container">
-    <p>Listar Pratos</p>   
+    <h1>Listar Pratos</h1>   
     <table class="table table-striped table-hover">
         <thead>
         <tr>
@@ -18,17 +18,39 @@
     </table>
 </div>
 
-<p>&nbsp; Incluir Pedido</p>
-<br>
+<<<<<<< HEAD
+   
+
 <div class="container">
+    <h1>Incluir Pedido</h1>
+=======
+
+<div class="container">
+    <h2>Incluir Pedido</h2>
+<br>
+>>>>>>> 2da654b37e1039520f2d4feddd9f045c918147cc
     <form method="post" #frm="ngForm" (ngSubmit) = "incluir(frm)">
      
-        
-        <div class="form-group">
-            <label for="codigocliente">Codigo do cliente:</label>
 
-            <select name="codigocliente" id="codigocliente" class="form-control" placeholder="Codigo do cliente"
-            [(ngModel)] = "pedido.codigocliente" required >
+
+
+        <div class="form-group">
+            <label for="codigoFuncionario">Codigo do Funcionário:</label>
+
+            <select name="codigoFuncionario" id="codigoFuncionario" class="form-control" placeholder="Codigo do Funcionário"
+            [(ngModel)] = "pedido.codigoFuncionario" required >
+        
+            <option *ngFor="let funcionario of funcionarios" value="{{funcionario.codigo}}">{{funcionario.codigo}} - {{funcionario.nome}}</option>
+          
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="codigoCliente">Codigo do cliente:</label>
+
+            <select name="codigoCliente" id="codigoCliente" class="form-control" placeholder="Codigo do cliente"
+            [(ngModel)] = "pedido.codigoCliente" required >
         
             
             <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.codigocliente}} - {{cliente.nome}}</option>
@@ -37,9 +59,9 @@
         </div>
 
         <div class="form-group">
-            <label for="codigoprato">Codigo do prato: </label>
-            <select name="codigoprato" id="codigoprato" class="form-control" placeholder="Codigo do prato"
-            [(ngModel)] = "pedido.codigoprato" required>
+            <label for="codigoPrato">Codigo do prato: </label>
+            <select name="codigoPrato" id="codigoPrato" class="form-control" placeholder="Codigo do prato"
+            [(ngModel)] = "pedido.codigoPrato" required>
  
             <option *ngFor="let prato of pratos" value="{{prato.codprato}}">{{prato.descricao}}</option>
 
@@ -58,15 +80,13 @@
             <input type="text" name="preco" id="preco" class="form-control" placeholder="preco"
             [(ngModel)] = "pedido.preco" required>
             &nbsp; 
-        </div>
-    
+        </div>  
         <input type="hidden" name="pronto" id="pronto" value="false" class="form-control" placeholder="pronto"
             [(ngModel)] = "pedido.pronto" required>
             &nbsp; 
-
         <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">
             Incluir
         </button>
-
+    <br><br><br><br><br>
     </form>
 </div>

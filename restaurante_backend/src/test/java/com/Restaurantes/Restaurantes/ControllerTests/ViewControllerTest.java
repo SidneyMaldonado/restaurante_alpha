@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.Restaurantes.Restaurantes.repositorio.ViewClientesAtendidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
@@ -33,12 +34,15 @@ class ViewControllerTest {
 	@Autowired
 	private ViewProdutosAlfaRepositorio produtosAlfa;
 	@Autowired
-	private ViewController controller;
-	@Autowired
-	private ViewContaPratoPedidosRepositorio pratoPedidoRepositorio;
+	private ViewController controller;	
 	@Autowired
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;
-	
+	@Autowired
+    private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
+	@Autowired
+	private ViewContaPratoPedidosRepositorio pratoPedidoRepositorio;
+
+
 
 	
 	@Test
@@ -57,9 +61,7 @@ class ViewControllerTest {
 		}
 		
 	}
-	@Autowired
-	private ViewContaPratoPedidosRepositorio repositorios;
-	
+
 	@Test
 	void testlistarContaPratoPedidos() {
 		

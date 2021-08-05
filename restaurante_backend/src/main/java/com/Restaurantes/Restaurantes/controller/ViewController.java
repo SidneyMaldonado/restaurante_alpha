@@ -14,11 +14,11 @@ import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
 import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ProdutoFuncionarioRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
-
+import com.Restaurantes.Restaurantes.repositorio.ViewClientesAtendidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
-
+import com.Restaurantes.Restaurantes.views.ViewClientesAtendidos;
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
@@ -47,41 +47,38 @@ public class ViewController {
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;	
     @Autowired
 	private ViewContaPratoPedidosRepositorio repositorios;
- 
 	@Autowired
-	private ProdutoFuncionarioRepositorio produtofunrepositorio; 
-    
-    
- 
-   
-	
+	private ProdutoFuncionarioRepositorio produtoFuncionarioRepositorio; 
+    @Autowired
+    private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
+
  
 	@GetMapping("listarSomaPagoCliente")
-	public List<ViewSomaPagoCliente> listarSomaPagoCliente(){
+	public List<ViewSomaPagoCliente>listarSomaPagoCliente(){
 		
 		return repositorio.findAll();
 	}
 		
 	@GetMapping("listarProdutoPreco")
-	public List<ViewListaProdutoPreco> listarProdutoPreco(){
+	public List<ViewListaProdutoPreco>listarProdutoPreco(){
 			
 		return produtoPrecoRepositorio.findAll();
 	}
 
     @GetMapping("listarContaPratoPedidos")
-	public List<ViewContaPratoPedidos> listarContaPratoPedidos(){
+	public List<ViewContaPratoPedidos>listarContaPratoPedidos(){
 				
 		return repositorios.findAll();
     }
 		
 	@GetMapping("ListarClientesOrdemAlfabetica")
-	public List<ClientesOrdemAlfabetica> listarClientesOrdem(){
+	public List<ClientesOrdemAlfabetica>listarClientesOrdem(){
 		
 		return repo.findAll();
 	}
 
 	@GetMapping("totalpratospedido")
-	public List<ViewTotalPratosPedido> listarTotalPratosPedido(){
+	public List<ViewTotalPratosPedido>listarTotalPratosPedido(){
 		
 		return totalPratos.findAll();
 		
@@ -94,19 +91,27 @@ public class ViewController {
 	}
 	
 	@GetMapping("listarprodutospratos")
-	public List<QtdProdutosPratos> listarQtdprodutospagos(){
+	public List<QtdProdutosPratos>listarQtdprodutospagos(){
 		
 		return reposi.findAll();
 		
 	}
 	
- 
-	@GetMapping ("listarprodutofuncionario")
-	public List<ProdutoFuncionario> listarprodutofuncionario(){
+
+	@GetMapping("listarprodutofuncionario")
+	public List<ProdutoFuncionario>listarprodutofuncionario(){
 		
-		return produtofunrepositorio.findAll();
+		return produtoFuncionarioRepositorio.findAll();
 		
- 
 	}
+
+	 @GetMapping("listarClientesAtendidos")
+	public List<ViewClientesAtendidos> listarClientesAtendidos(){
+					
+		return clientesAtendidosRepositorio.findAll();
+		
+	 }
+
+
 }
 
