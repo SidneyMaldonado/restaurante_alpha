@@ -18,18 +18,33 @@
     </table>
 </div>
 
+<<<<<<< HEAD
    
 
 <div class="container">
     <h1>Incluir Pedido</h1>
+=======
+
+<div class="container">
+    <p>&nbsp; Incluir Pedido</p>
+<br>
+>>>>>>> 2da654b37e1039520f2d4feddd9f045c918147cc
     <form method="post" #frm="ngForm" (ngSubmit) = "incluir(frm)">
      
         
         <div class="form-group">
-            <label for="codigocliente">Codigo do cliente:</label>
+            <label for="codigoFuncionario">Código Funcionário: </label>
+            <input type="text" name="codigoFuncionario" id="codigoFuncionario" class="form-control" placeholder="Código do Funcionário"
+            [(ngModel)] = "pedido.codigoFuncionario" required>
+            &nbsp; 
+        </div>
 
-            <select name="codigocliente" id="codigocliente" class="form-control" placeholder="Codigo do cliente"
-            [(ngModel)] = "pedido.codigocliente" required >
+
+        <div class="form-group">
+            <label for="codigoCliente">Codigo do cliente:</label>
+
+            <select name="codigoCliente" id="codigoCliente" class="form-control" placeholder="Codigo do cliente"
+            [(ngModel)] = "pedido.codigoCliente" required >
         
             
             <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.codigocliente}} - {{cliente.nome}}</option>
@@ -38,9 +53,9 @@
         </div>
 
         <div class="form-group">
-            <label for="codigoprato">Codigo do prato: </label>
-            <select name="codigoprato" id="codigoprato" class="form-control" placeholder="Codigo do prato"
-            [(ngModel)] = "pedido.codigoprato" required>
+            <label for="codigoPrato">Codigo do prato: </label>
+            <select name="codigoPrato" id="codigoPrato" class="form-control" placeholder="Codigo do prato"
+            [(ngModel)] = "pedido.codigoPrato" required>
  
             <option *ngFor="let prato of pratos" value="{{prato.codprato}}">{{prato.descricao}}</option>
 
@@ -59,15 +74,13 @@
             <input type="text" name="preco" id="preco" class="form-control" placeholder="preco"
             [(ngModel)] = "pedido.preco" required>
             &nbsp; 
-        </div>
-    
+        </div>  
         <input type="hidden" name="pronto" id="pronto" value="false" class="form-control" placeholder="pronto"
             [(ngModel)] = "pedido.pronto" required>
             &nbsp; 
-
         <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">
             Incluir
         </button>
-
+    <br><br><br><br><br>
     </form>
 </div>
