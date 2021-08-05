@@ -44,12 +44,8 @@ const routes: Routes = [
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
 {path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
-<<<<<<< HEAD
 {path:'listarclientesatendidos', component:ClientesatendidosComponent }
 
-=======
-{path: 'listasetor', component: ListarsetorComponent}
->>>>>>> 20e98c53d43dbe423a9cb6cdf9aada4e6f064ee9
 
 ];
 
