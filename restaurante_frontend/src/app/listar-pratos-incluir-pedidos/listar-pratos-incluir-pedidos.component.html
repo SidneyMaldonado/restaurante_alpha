@@ -26,17 +26,23 @@
 =======
 
 <div class="container">
-    <p>&nbsp; Incluir Pedido</p>
+    <h2>Incluir Pedido</h2>
 <br>
 >>>>>>> 2da654b37e1039520f2d4feddd9f045c918147cc
     <form method="post" #frm="ngForm" (ngSubmit) = "incluir(frm)">
      
-        
+
+
+
         <div class="form-group">
-            <label for="codigoFuncionario">Código Funcionário: </label>
-            <input type="text" name="codigoFuncionario" id="codigoFuncionario" class="form-control" placeholder="Código do Funcionário"
-            [(ngModel)] = "pedido.codigoFuncionario" required>
-            &nbsp; 
+            <label for="codigoFuncionario">Codigo do Funcionário:</label>
+
+            <select name="codigoFuncionario" id="codigoFuncionario" class="form-control" placeholder="Codigo do Funcionário"
+            [(ngModel)] = "pedido.codigoFuncionario" required >
+        
+            <option *ngFor="let funcionario of funcionarios" value="{{funcionario.codigo}}">{{funcionario.codigo}} - {{funcionario.nome}}</option>
+          
+            </select>
         </div>
 
 
