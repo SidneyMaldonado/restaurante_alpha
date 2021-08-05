@@ -24,6 +24,7 @@ import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutoprec
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
 import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
+import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncion
     ViewQtdPratosPedidoComponent,
     ListaprodutoprecoComponent,
     ListarfuncionarioComponent,
-    IncluirfuncionarioComponent
+    IncluirfuncionarioComponent,
+    ClientesatendidosComponent
 
   ],
   imports: [

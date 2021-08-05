@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
+import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
@@ -38,13 +39,12 @@ const routes: Routes = [
 {path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path:'listarclienteordemalfabetica', component: ListarclienteordemalfabeticaComponent},
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
-<<<<<<< HEAD
-{path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent}
-=======
+{path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
-{path: 'incluirfuncionario', component: IncluirfuncionarioComponent}
->>>>>>> 22a4bd29fcf1e81e38e85429e3df1fd3348995cf
+{path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
+{path:'listarclientesatendidos', component:ClientesatendidosComponent }
+
 
 ];
 

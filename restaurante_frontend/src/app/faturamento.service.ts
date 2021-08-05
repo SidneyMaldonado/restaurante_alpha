@@ -11,5 +11,6 @@ export class FaturamentoService {
   constructor(private _cliente:HttpClient) { }
   listarfaturamento(): Observable<any>{
     return this._cliente.get<Faturamento[]>("http://localhost:8080/faturamento/listar")
+    
   }
 }
