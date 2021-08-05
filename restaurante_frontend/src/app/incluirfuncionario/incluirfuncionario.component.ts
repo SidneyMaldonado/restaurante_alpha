@@ -11,7 +11,7 @@ import { FuncionarioService } from '../funcionario.service';
 })
 export class IncluirfuncionarioComponent implements OnInit {
 
-  funcionario: Funcionario={codigo:0, nome:"", salario:0}
+   funcionario : Funcionario={codigo:0, nome:"", salario:0, codigoSetor:0};
 
   constructor( private servico:FuncionarioService) { }
 

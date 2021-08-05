@@ -14,11 +14,11 @@ import com.Restaurantes.Restaurantes.entity.QtdProdutosPratos;
 import com.Restaurantes.Restaurantes.repositorio.ClientesOrdemAlfabeticaRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ProdutoFuncionarioRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.QtdProdutosPratosRepositorio;
-import com.Restaurantes.Restaurantes.repositorio.ViewClientesAtendidosRepositorio;
+
 import com.Restaurantes.Restaurantes.repositorio.ViewContaPratoPedidosRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewListaProdutoPrecoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.ViewSomaPagoClienteRepositorio;
-import com.Restaurantes.Restaurantes.views.ViewClientesAtendidos;
+
 import com.Restaurantes.Restaurantes.views.ViewContaPratoPedidos;
 import com.Restaurantes.Restaurantes.views.ViewListaProdutoPreco;
 import com.Restaurantes.Restaurantes.repositorio.ViewProdutosAlfaRepositorio;
@@ -47,12 +47,24 @@ public class ViewController {
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;	
     @Autowired
 	private ViewContaPratoPedidosRepositorio repositorios;
+<<<<<<< HEAD
 	@Autowired
 	private ProdutoFuncionarioRepositorio produtoFuncionarioRepositorio; 
     @Autowired
     private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
 	
 
+=======
+ 
+	@Autowired
+	private ProdutoFuncionarioRepositorio produtofunrepositorio; 
+    
+    
+ 
+   
+	
+ 
+>>>>>>> 22a4bd29fcf1e81e38e85429e3df1fd3348995cf
 	@GetMapping("listarSomaPagoCliente")
 	public List<ViewSomaPagoCliente>listarSomaPagoCliente(){
 		
@@ -97,6 +109,7 @@ public class ViewController {
 		
 	}
 	
+<<<<<<< HEAD
 	@GetMapping("listarprodutofuncionario")
 	public List<ProdutoFuncionario>listarprodutofuncionario(){
 		
@@ -109,6 +122,15 @@ public class ViewController {
 					
 		return clientesAtendidosRepositorio.findAll();
 
+=======
+ 
+	@GetMapping ("listarprodutofuncionario")
+	public List<ProdutoFuncionario> listarprodutofuncionario(){
+		
+		return produtofunrepositorio.findAll();
+		
+ 
+>>>>>>> 22a4bd29fcf1e81e38e85429e3df1fd3348995cf
 	}
 }
 

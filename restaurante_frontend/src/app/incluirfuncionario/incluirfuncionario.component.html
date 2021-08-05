@@ -18,6 +18,13 @@
             &nbsp; 
         </div>
 
+        <div class="form-group">
+            <label for="codigoSetor">Setor: </label>
+            <input type="text" name="codigoSetor" id="codigoSetor" class="form-control" placeholder="codigoSetor"
+            [(ngModel)] = "funcionario.codigoSetor" required>
+            &nbsp; 
+        </div>
+
         <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">
             Incluir
         </button>
