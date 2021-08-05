@@ -10,7 +10,7 @@ import { AddpagamentoService } from '../addpagamento.service';
 })
 export class AddpagamentoComponent implements OnInit {
 
-  pagamento : Pagamento = {codigopagamento: 0, codigopedido: 0 , codigocliente: 0 , valorpago: 0 }
+  pagamento : Pagamento = { codigopedido: 0 , codigopagamento:0, valorpago: 0 };
 
   constructor( private servico: AddpagamentoService) { }
 

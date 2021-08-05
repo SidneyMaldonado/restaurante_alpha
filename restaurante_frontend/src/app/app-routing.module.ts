@@ -17,6 +17,7 @@ import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/lista
 import { ListarclienteordemalfabeticaComponent } from './listarclienteordemalfabetica/listarclienteordemalfabetica.component';
 import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
+import { ListarprodfuncionarioComponent } from './listarprodfuncionario/listarprodfuncionario.component';
 import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutoprato.component';
 import { ListarsetorComponent } from './listarsetor/listarsetor.component';
 import { PrincipalComponent } from './principal/principal.component';
@@ -44,9 +45,16 @@ const routes: Routes = [
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
 {path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
+<<<<<<< HEAD
 {path:'listarclientesatendidos', component:ClientesatendidosComponent }
 
 
+=======
+{path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
+{path:'listarclientesatendidos', component:ClientesatendidosComponent },
+{path: 'listasetor', component: ListarsetorComponent}
+ 
+>>>>>>> 4d621217a3dd36441894c080486047645ce903c2
 ];
 
 @NgModule({

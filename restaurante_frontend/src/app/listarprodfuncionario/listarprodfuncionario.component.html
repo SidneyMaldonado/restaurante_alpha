@@ -1,0 +1,29 @@
+<div class="container">
+
+    <h1>Lista de Produtos por Funcionario</h1>       
+
+    <div id="demo" class="collapse"></div>
+    <table class="table table-light table-striped">
+      <thead>
+        <tr>
+          <th>Codigo Produto</th>
+          <th>Nome do Produto</th>
+          <th>Nome do Funcionario</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let  listarprodutofuncionario of listarprodutofuncionario ">
+          <td>{{ listarprodutofuncionario.codigoproduto }}</td>
+          <td>{{ listarprodutofuncionario.nomeproduto}}</td>
+          <td>{{ listarprodutofuncionario.nomefuncionario}}</td>
+        
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+  

@@ -17,6 +17,7 @@ export class AutenticacaoComponent implements OnInit {
   login: Login = {codCliente:'', senha:''}
   autorizado: Autorizar = { autorizado: false }
   
+  
   router: Router;
   
   constructor( private servico: ServicologinService, router: Router) { this.router = router; }
@@ -33,7 +34,7 @@ export class AutenticacaoComponent implements OnInit {
 
       dados => {this.autorizado = dados, console.log(this.autorizado.autorizado), this.navegar()},
       error => console.log("Erro ao autorizar")
-
+       
     )
 
   }
@@ -42,8 +43,13 @@ export class AutenticacaoComponent implements OnInit {
     // se a senha estiver correta
     if (this.autorizado.autorizado){
       // redirecionar para o componente principal
+ 
+       this.router.navigate([]);
+        
+ 
       alert("Acesso Autorizado!")
        this.router.navigate([""]);
+ 
 
     } else {
        alert('Acesso não autorizado');
