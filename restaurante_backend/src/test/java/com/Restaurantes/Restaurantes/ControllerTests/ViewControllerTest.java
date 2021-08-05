@@ -34,13 +34,13 @@ class ViewControllerTest {
 	@Autowired
 	private ViewProdutosAlfaRepositorio produtosAlfa;
 	@Autowired
-	private ViewController controller;
-	@Autowired
-	private ViewContaPratoPedidosRepositorio pratoPedidoRepositorio;
+	private ViewController controller;	
 	@Autowired
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;
 	@Autowired
     private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
+	@Autowired
+	private ViewContaPratoPedidosRepositorio pratoPedidoRepositorio;
 
 	
 	@Test
@@ -59,9 +59,7 @@ class ViewControllerTest {
 		}
 		
 	}
-	@Autowired
-	private ViewContaPratoPedidosRepositorio repositorios;
-	
+
 	@Test
 	void testlistarContaPratoPedidos() {
 		

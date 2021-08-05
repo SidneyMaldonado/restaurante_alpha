@@ -47,42 +47,38 @@ public class ViewController {
 	private ViewListaProdutoPrecoRepositorio produtoPrecoRepositorio;	
     @Autowired
 	private ViewContaPratoPedidosRepositorio repositorios;
-<<<<<<< HEAD
 	@Autowired
-	private ProdutoFuncionarioRepositorio produtofunrepositorio; 
-    
-    
-=======
+	private ProdutoFuncionarioRepositorio produtoFuncionarioRepositorio; 
     @Autowired
     private ViewClientesAtendidosRepositorio clientesAtendidosRepositorio;
 	
->>>>>>> dc11244d8cda1d459b8c4d2b78b04e6b05c9d7a8
+
 	@GetMapping("listarSomaPagoCliente")
-	public List<ViewSomaPagoCliente> listarSomaPagoCliente(){
+	public List<ViewSomaPagoCliente>listarSomaPagoCliente(){
 		
 		return repositorio.findAll();
 	}
 		
 	@GetMapping("listarProdutoPreco")
-	public List<ViewListaProdutoPreco> listarProdutoPreco(){
+	public List<ViewListaProdutoPreco>listarProdutoPreco(){
 			
 		return produtoPrecoRepositorio.findAll();
 	}
 
     @GetMapping("listarContaPratoPedidos")
-	public List<ViewContaPratoPedidos> listarContaPratoPedidos(){
+	public List<ViewContaPratoPedidos>listarContaPratoPedidos(){
 				
 		return repositorios.findAll();
     }
 		
 	@GetMapping("ListarClientesOrdemAlfabetica")
-	public List<ClientesOrdemAlfabetica> listarClientesOrdem(){
+	public List<ClientesOrdemAlfabetica>listarClientesOrdem(){
 		
 		return repo.findAll();
 	}
 
 	@GetMapping("totalpratospedido")
-	public List<ViewTotalPratosPedido> listarTotalPratosPedido(){
+	public List<ViewTotalPratosPedido>listarTotalPratosPedido(){
 		
 		return totalPratos.findAll();
 		
@@ -95,23 +91,24 @@ public class ViewController {
 	}
 	
 	@GetMapping("listarprodutospratos")
-	public List<QtdProdutosPratos> listarQtdprodutospagos(){
+	public List<QtdProdutosPratos>listarQtdprodutospagos(){
 		
 		return reposi.findAll();
 		
 	}
 	
-<<<<<<< HEAD
-	@GetMapping ("listarprodutofuncionario")
-	public List<ProdutoFuncionario> listarprodutofuncionario(){
+	@GetMapping("listarprodutofuncionario")
+	public List<ProdutoFuncionario>listarprodutofuncionario(){
 		
-		return produtofunrepositorio.findAll();
-=======
+		return produtoFuncionarioRepositorio.findAll();
+		
+	}
+
 	 @GetMapping("listarClientesAtendidos")
 	public List<ViewClientesAtendidos> listarClientesAtendidos(){
 					
 		return clientesAtendidosRepositorio.findAll();
->>>>>>> dc11244d8cda1d459b8c4d2b78b04e6b05c9d7a8
+
 	}
 }
 

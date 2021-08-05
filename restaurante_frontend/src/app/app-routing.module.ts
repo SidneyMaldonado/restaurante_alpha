@@ -1,5 +1,4 @@
- 
-import {   NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
@@ -19,27 +18,25 @@ import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutop
 import { PrincipalComponent } from './principal/principal.component';
 import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
 
-
-
 const routes: Routes = [
-{path: '', component: PrincipalComponent},
-{path: 'addcliente', component: AddclienteComponent},
-{path: 'addpagamento', component: AddpagamentoComponent},
-{path: 'listarpratopronto', component: ListarpratoprontoComponent},
+{path:'', component: PrincipalComponent},
+{path:'addcliente', component: AddclienteComponent},
+{path:'addpagamento', component: AddpagamentoComponent},
+{path:'listarpratopronto', component: ListarpratoprontoComponent},
 {path:'listarfaturamento', component:ListarFaturamentoComponent},
 {path:'listarpratosincluirpedidos', component:ListarPratosIncluirPedidosComponent},
-{path: "login", component: AutenticacaoComponent},
+{path:'login', component: AutenticacaoComponent},
 {path:'incluirpratos', component:IncluirPratosComponent},
 {path:'incluirproduto', component:IncluirProdutoComponent},
 {path:'listarproduto', component:ListarProdutoComponent},
 {path:'listasomapagocliente', component: ListarSomaPagoClienteComponent},
-{path :'listacontapratopedido', component: ListarContaPratosPedidosComponent},
-{path :'listaprodutopreco', component: ListaprodutoprecoComponent},
-{path: 'qtdpratospedido', component: ViewQtdPratosPedidoComponent},
-{path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
+{path:'listacontapratopedido', component: ListarContaPratosPedidosComponent},
+{path:'listaprodutopreco', component: ListaprodutoprecoComponent},
+{path:'qtdpratospedido', component: ViewQtdPratosPedidoComponent},
+{path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path:'listarclienteordemalfabetica', component: ListarclienteordemalfabeticaComponent},
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
-{path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent}
+{path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent}
 
 ];
 

@@ -10,7 +10,7 @@ import { ProdutoService } from '../produto.service';
 })
 export class IncluirProdutoComponent implements OnInit {
 
-  produto: Produto={ codigo:0, nome:" ", preco:0, quantidade:0}
+  produto: Produto={ codigo:0, nome:"", preco:0, quantidade:0}
   constructor(private servicoincluirproduto:ProdutoService) { }
 
   ngOnInit(): void {
