@@ -15,7 +15,7 @@ import { Prato } from './Prato';
 export class ListarPratosIncluirPedidosComponent implements OnInit {
 
   pratos: Prato[]=[];
-  pedido: Pedido={codigopedido: 0, codigoprato: 0, codigocliente: 0, quantidade: 0, preco:0, pronto:false}
+  pedido: Pedido={codigoPedido: 0, codigoPrato: 0, codigoFuncionario: 0, codigoCliente: 0, quantidade: 0, preco:0, pronto:false}
   clientes: Cliente[] = [];
 
   constructor(
