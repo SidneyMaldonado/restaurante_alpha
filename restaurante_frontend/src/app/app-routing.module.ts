@@ -17,6 +17,7 @@ import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/lista
 import { ListarclienteordemalfabeticaComponent } from './listarclienteordemalfabetica/listarclienteordemalfabetica.component';
 import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
+import { ListarprodfuncionarioComponent } from './listarprodfuncionario/listarprodfuncionario.component';
 import { ListarprodutopratoComponent } from './listarprodutoprato/listarprodutoprato.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { ViewQtdPratosPedidoComponent } from './view-qtd-pratos-pedido/view-qtd-pratos-pedido.component';
@@ -43,8 +44,8 @@ const routes: Routes = [
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
-{path: 'incluirfuncionario', component: IncluirfuncionarioComponent}
-
+{path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
+{path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}
 ];
 
 @NgModule({
