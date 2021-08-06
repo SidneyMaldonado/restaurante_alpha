@@ -16,6 +16,11 @@ export class PedidoService {
   }
 
   constructor(private _cliente:HttpClient) { }
+  
+  listarPedidos(): Observable<any>{
+    return this._cliente.get<Pedido[]>("http://localhost:8080/pedido/listar")
+  }
+
   incluir(pedido:Pedido): Observable<any>{
     return this._cliente.post<Pedido>("http://localhost:8080/pedido/incluir",pedido);
   }

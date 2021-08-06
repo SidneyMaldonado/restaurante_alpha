@@ -35,20 +35,33 @@ const routes: Routes = [
 {path:'incluirproduto', component:IncluirProdutoComponent},
 {path:'listarproduto', component:ListarProdutoComponent},
 {path:'listasomapagocliente', component: ListarSomaPagoClienteComponent},
-{path:'listacontapratopedido', component: ListarContaPratosPedidosComponent},
+{path:'listarcontapratospedidos', component: ListarContaPratosPedidosComponent},
 {path:'listaprodutopreco', component: ListaprodutoprecoComponent},
 {path:'qtdpratospedido', component: ViewQtdPratosPedidoComponent},
 {path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path:'listarclienteordemalfabetica', component: ListarclienteordemalfabeticaComponent},
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
 {path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
+<<<<<<< HEAD
 {path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path:'listarfuncionario', component:  ListarfuncionarioComponent},
 {path:'incluirfuncionario', component: IncluirfuncionarioComponent},
 {path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
 {path:'listarclientesatendidos', component:ClientesatendidosComponent },
 {path:'listasetor', component: ListarsetorComponent}
+=======
+{path: 'listarfuncionario', component:  ListarfuncionarioComponent},
+{path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
+{path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
+{path:'listarclientesatendidos', component:ClientesatendidosComponent },
+{path: 'listasetor', component: ListarsetorComponent},
+<<<<<<< HEAD
+{path: 'clientesatendidos', component: ClientesatendidosComponent}
+=======
+{path: 'listapratoporpedido', component: ViewQtdPratosPedidoComponent}
+>>>>>>> 99fb563a22eb201808e3dbaa5cb8590b2f51360d
  
+>>>>>>> 7e715afb383c2196ab5c0352f622bd8bf4acc425
 ];
 
 @NgModule({
