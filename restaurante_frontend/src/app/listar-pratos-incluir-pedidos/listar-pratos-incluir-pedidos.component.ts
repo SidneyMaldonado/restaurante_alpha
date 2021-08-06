@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Cliente } from 'src/Cliente';
+import { Cliente } from 'src/entidades/Cliente';
 import { Funcionario } from 'src/entidades/Funcionario';
 import { ClienteService } from '../cliente.service';
 import { FuncionarioService } from '../funcionario.service';

@@ -35,7 +35,7 @@ const routes: Routes = [
 {path:'incluirproduto', component:IncluirProdutoComponent},
 {path:'listarproduto', component:ListarProdutoComponent},
 {path:'listasomapagocliente', component: ListarSomaPagoClienteComponent},
-{path:'listacontapratopedido', component: ListarContaPratosPedidosComponent},
+{path:'listarcontapratospedidos', component: ListarContaPratosPedidosComponent},
 {path:'listaprodutopreco', component: ListaprodutoprecoComponent},
 {path:'qtdpratospedido', component: ViewQtdPratosPedidoComponent},
 {path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
@@ -47,8 +47,8 @@ const routes: Routes = [
 {path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
 {path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
 {path:'listarclientesatendidos', component:ClientesatendidosComponent },
-{path: 'listasetor', component: ListarsetorComponent}
- 
+{path: 'listasetor', component: ListarsetorComponent},
+{path: 'clientesatendidos', component: ClientesatendidosComponent}
 ];
 
 @NgModule({
