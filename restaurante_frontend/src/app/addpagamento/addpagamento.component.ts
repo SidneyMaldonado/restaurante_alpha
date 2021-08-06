@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Pagamento } from 'src/Pagamento';
-import { AddpagamentoService } from '../addpagamento.service';
+import { Pagamento } from 'src/entidades/Pagamento';
+import { AddpagamentoService } from '../servicos/addpagamento.service';
 
 @Component({
   selector: 'app-addpagamento',

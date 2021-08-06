@@ -45,16 +45,10 @@ const routes: Routes = [
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
 {path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
-<<<<<<< HEAD
-{path:'listarclientesatendidos', component:ClientesatendidosComponent }
-
-
-=======
 {path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
 {path:'listarclientesatendidos', component:ClientesatendidosComponent },
 {path: 'listasetor', component: ListarsetorComponent}
  
->>>>>>> 4d621217a3dd36441894c080486047645ce903c2
 ];
 
 @NgModule({
