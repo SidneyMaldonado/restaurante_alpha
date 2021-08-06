@@ -42,13 +42,17 @@ const routes: Routes = [
 {path:'listarclienteordemalfabetica', component: ListarclienteordemalfabeticaComponent},
 {path:'listarprodutoprato', component: ListarprodutopratoComponent},
 {path:'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
-{path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
 {path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
 {path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
 {path:'listarclientesatendidos', component:ClientesatendidosComponent },
 {path: 'listasetor', component: ListarsetorComponent},
+<<<<<<< HEAD
 {path: 'clientesatendidos', component: ClientesatendidosComponent}
+=======
+{path: 'listapratoporpedido', component: ViewQtdPratosPedidoComponent}
+ 
+>>>>>>> 7e715afb383c2196ab5c0352f622bd8bf4acc425
 ];
 
 @NgModule({
