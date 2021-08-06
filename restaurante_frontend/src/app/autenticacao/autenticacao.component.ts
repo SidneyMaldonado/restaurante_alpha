@@ -5,13 +5,8 @@ import { ServicologinService } from '../servicos/servicologin.service';
 import { Autorizar } from './Autorizar';
 import { Login } from './Login';
 import { Router } from '@angular/router';
-<<<<<<< HEAD
-import { Cliente } from 'src/Cliente';
-import { ClienteService } from '../servicos/cliente.service';
-=======
 import { Cliente } from 'src/entidades/Cliente';
-import { ClienteService } from '../cliente.service';
->>>>>>> 99fb563a22eb201808e3dbaa5cb8590b2f51360d
+import { ClienteService } from '../servicos/cliente.service';
 
 @Component({
   selector: 'app-autenticacao',
