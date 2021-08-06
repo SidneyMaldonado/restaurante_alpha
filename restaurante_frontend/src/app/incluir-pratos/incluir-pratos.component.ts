@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Prato } from '../listar-pratos-incluir-pedidos/Prato';
-import { PratoService } from '../prato.service';
+import { PratoService } from '../servicos/prato.service';
 
 @Component({
   selector: 'app-incluir-pratos',

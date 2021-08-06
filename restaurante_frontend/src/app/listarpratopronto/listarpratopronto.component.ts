@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PratoPronto } from 'src/entidades/PratoPronto';
-import { ListarpratoprontoService } from '../listarpratopronto.service';
+import { ListarpratoprontoService } from '../servicos/listarpratopronto.service';
 
 @Component({
   selector: 'app-listarpratopronto',

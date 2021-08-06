@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Prato } from './listar-pratos-incluir-pedidos/Prato';
+import { Prato } from '../listar-pratos-incluir-pedidos/Prato';
 
 @Injectable({
   providedIn: 'root'

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewContaPratosPedidos } from 'src/entidades/ViewContaPratosPedidos';
-import { ListarcontapratospedidosService } from '../listarcontapratospedidos.service';
+import { ListarcontapratospedidosService } from '../servicos/listarcontapratospedidos.service';
 
 @Component({
   selector: 'app-listar-conta-pratos-pedidos',

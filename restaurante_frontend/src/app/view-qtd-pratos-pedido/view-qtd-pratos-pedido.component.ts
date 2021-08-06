@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewQtdPratosPedido } from 'src/entidades/ViewQtdPratosPedido';
-import { ViewQtdPratosPedidoService } from '../view-qtd-pratos-pedido.service';
+import { ViewQtdPratosPedidoService } from '../servicos/view-qtd-pratos-pedido.service';
 
 @Component({
   selector: 'app-view-qtd-pratos-pedido',

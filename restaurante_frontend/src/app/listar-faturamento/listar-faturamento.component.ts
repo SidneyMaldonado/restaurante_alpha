@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FaturamentoService } from '../faturamento.service';
+import { FaturamentoService } from '../servicos/faturamento.service';
 import { Faturamento } from './Faturamento';
 
 @Component({

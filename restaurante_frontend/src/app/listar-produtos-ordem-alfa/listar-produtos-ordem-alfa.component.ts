@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewProdutosAlfa } from 'src/entidades/ViewProdutosAlfa';
-import { ViewProdutosOrdemAlfaService } from '../view-produtos-ordem-alfa.service';
+import { ViewProdutosOrdemAlfaService } from '../servicos/view-produtos-ordem-alfa.service';
 
 @Component({
   selector: 'app-listar-produtos-ordem-alfa',

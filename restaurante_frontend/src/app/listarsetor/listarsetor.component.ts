@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Setor } from 'src/entidades/Setor';
-import { SetorService } from '../setor.service';
+import { SetorService } from '../servicos/setor.service';
 
 @Component({
   selector: 'app-listarsetor',

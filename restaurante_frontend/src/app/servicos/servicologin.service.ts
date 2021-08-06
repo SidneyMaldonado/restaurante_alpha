@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Autorizar } from './autenticacao/Autorizar';
-import { Login } from './autenticacao/Login';
+import { Autorizar } from '../autenticacao/Autorizar';
+import { Login } from '../autenticacao/Login';
 
 @Injectable({
   providedIn: 'root'

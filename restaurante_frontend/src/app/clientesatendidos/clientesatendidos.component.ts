@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListarClientesAtendidos } from 'src/entidades/ListarClientesAtendidos';
-import { ClientesatendidosService } from '../clientesatendidos.service';
+import { ClientesatendidosService } from '../servicos/clientesatendidos.service';
 
 @Component({
   selector: 'app-clientesatendidos',

@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { PratoService } from './prato.service';
 import { HttpClientTestingModule} from '@angular/common/http/testing'
-import { Prato } from './listar-pratos-incluir-pedidos/Prato';
+import { Prato } from '../listar-pratos-incluir-pedidos/Prato';
 
 
 describe('PratoService', () => {

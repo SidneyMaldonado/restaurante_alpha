@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListarClienteOrdemAlfabetica } from 'src/entidades/ListarClienteOrdemAlfabetica';
-import { ListarclienteordemalfabeticaService } from '../listarclienteordemalfabetica.service';
+import { ListarclienteordemalfabeticaService } from '../servicos/listarclienteordemalfabetica.service';
 
 @Component({
   selector: 'app-listarclienteordemalfabetica',

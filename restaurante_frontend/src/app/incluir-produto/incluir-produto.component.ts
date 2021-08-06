@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Produto } from 'src/entidades/Produto';
-import { ProdutoService } from '../produto.service';
+import { ProdutoService } from '../servicos/produto.service';
 
 @Component({
   selector: 'app-incluir-produto',

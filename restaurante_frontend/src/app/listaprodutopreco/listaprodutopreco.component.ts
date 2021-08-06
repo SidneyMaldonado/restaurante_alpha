@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewListaProdutoPreco } from 'src/entidades/ViewListaProdutoPreco';
-import { ListaprodutoprecoService } from '../listaprodutopreco.service';
+import { ListaprodutoprecoService } from '../servicos/listaprodutopreco.service';
 
 
 @Component({

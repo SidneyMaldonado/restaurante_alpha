@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewSomaPagoCliente } from 'src/entidades/ViewSomaPagoCliente';
-import { ViewSomaPagoClienteService } from '../view-soma-pago-cliente.service';
+import { ViewSomaPagoClienteService } from '../servicos/view-soma-pago-cliente.service';
 
 @Component({
   selector: 'app-listar-soma-pago-cliente',

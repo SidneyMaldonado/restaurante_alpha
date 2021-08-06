@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Faturamento } from './listar-faturamento/Faturamento';
+import { Faturamento } from '../listar-faturamento/Faturamento';
 
 @Injectable({
   providedIn: 'root'

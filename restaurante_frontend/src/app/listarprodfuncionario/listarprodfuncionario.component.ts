@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListarProdutoFuncionario } from 'src/entidades/ListarProdutoFuncionario';
-import { ListarprodutofuncionarioService } from '../listarprodutofuncionario.service';
+import { ListarprodutofuncionarioService } from '../servicos/listarprodutofuncionario.service';
 
 @Component({
   selector: 'app-listarprodfuncionario',

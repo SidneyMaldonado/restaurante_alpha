@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Pedido } from './listar-pratos-incluir-pedidos/Pedido';
+import { Pedido } from '../listar-pratos-incluir-pedidos/Pedido';
 
 
 @Injectable({

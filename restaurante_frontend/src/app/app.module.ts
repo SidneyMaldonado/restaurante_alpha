@@ -24,14 +24,10 @@ import { ListaprodutoprecoComponent } from './listaprodutopreco/listaprodutoprec
 import { ListarSomaPagoClienteComponent } from './listar-soma-pago-cliente/listar-soma-pago-cliente.component';
 import { ListarfuncionarioComponent } from './listarfuncionario/listarfuncionario.component';
 import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
-<<<<<<< HEAD
-import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
-=======
 import { ListarprodfuncionarioComponent } from './listarprodfuncionario/listarprodfuncionario.component';
 import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
 import { ListarsetorComponent } from './listarsetor/listarsetor.component';
  
->>>>>>> 33ea9a986ba952833b9adf9a6f77cb210fb6d4bc
 
 
 @NgModule({
@@ -56,14 +52,10 @@ import { ListarsetorComponent } from './listarsetor/listarsetor.component';
     ListaprodutoprecoComponent,
     ListarfuncionarioComponent,
     IncluirfuncionarioComponent,
-<<<<<<< HEAD
-    ClientesatendidosComponent
-=======
     ListarprodfuncionarioComponent,
     ClientesatendidosComponent,
     ListarsetorComponent  
  
->>>>>>> 33ea9a986ba952833b9adf9a6f77cb210fb6d4bc
 
   ],
   imports: [

@@ -1,12 +1,12 @@
 import { createTokenForExternalReference } from '@angular/compiler/src/identifiers';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ServicologinService } from '../servicologin.service';
+import { ServicologinService } from '../servicos/servicologin.service';
 import { Autorizar } from './Autorizar';
 import { Login } from './Login';
 import { Router } from '@angular/router';
 import { Cliente } from 'src/Cliente';
-import { ClienteService } from '../cliente.service';
+import { ClienteService } from '../servicos/cliente.service';
 
 @Component({
   selector: 'app-autenticacao',
