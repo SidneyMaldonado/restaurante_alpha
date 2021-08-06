@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { PratoPronto } from 'src/PratoPronto';
+import { PratoPronto } from 'src/entidades/PratoPronto';
 
 @Injectable({
   providedIn: 'root'

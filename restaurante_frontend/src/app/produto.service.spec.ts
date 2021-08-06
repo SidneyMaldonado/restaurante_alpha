@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { Produto } from 'src/Produto';
+import { Produto } from 'src/entidades/Produto';
 
 import { ProdutoService } from './produto.service';
 

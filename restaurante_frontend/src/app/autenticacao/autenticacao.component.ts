@@ -5,6 +5,8 @@ import { ServicologinService } from '../servicologin.service';
 import { Autorizar } from './Autorizar';
 import { Login } from './Login';
 import { Router } from '@angular/router';
+import { Cliente } from 'src/Cliente';
+import { ClienteService } from '../cliente.service';
 
 @Component({
   selector: 'app-autenticacao',
@@ -14,16 +16,21 @@ import { Router } from '@angular/router';
 export class AutenticacaoComponent implements OnInit {
 
 
+  clientes: Cliente[] = [];
   login: Login = {codCliente:'', senha:''}
   autorizado: Autorizar = { autorizado: false }
+  private router;
   
-  
-  router: Router;
-  
-  constructor( private servico: ServicologinService, router: Router) { this.router = router; }
+  constructor( private servico: ServicologinService, 
+               router: Router,
+               private servicocliente: ClienteService) { this.router = router; }
  
   ngOnInit(): void {
-  
+    this.servicocliente.Listar().subscribe(
+      dados => {this.clientes = dados, console.log(this.clientes)}, 
+      error => console.log("Erro ao recuperar clientes")
+      
+    )
   }
 
   public autenticar(frm: NgForm){

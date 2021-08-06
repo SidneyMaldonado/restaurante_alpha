@@ -45,7 +45,14 @@ const routes: Routes = [
 {path: 'listaprodutosordemalfa', component: ListarProdutosOrdemAlfaComponent},
 {path: 'listarfuncionario', component:  ListarfuncionarioComponent},
 {path: 'incluirfuncionario', component: IncluirfuncionarioComponent},
+<<<<<<< HEAD
 {path:'listarclientesatendidos', component:ClientesatendidosComponent }
+=======
+{path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
+{path:'listarclientesatendidos', component:ClientesatendidosComponent },
+{path: 'listasetor', component: ListarsetorComponent}
+ 
+>>>>>>> 33ea9a986ba952833b9adf9a6f77cb210fb6d4bc
 ];
 
 @NgModule({
