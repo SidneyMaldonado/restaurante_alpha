@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Pagamento } from 'src/entidades/Pagamento';
 import { Pedido } from '../listar-pratos-incluir-pedidos/Pedido';
-import { PedidoService } from '../pedido.service';
 import { AddpagamentoService } from '../servicos/addpagamento.service';
+import { PedidoService } from '../servicos/pedido.service';
 
 @Component({
   selector: 'app-addpagamento',
