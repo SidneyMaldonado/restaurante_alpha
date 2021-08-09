@@ -11,10 +11,10 @@ export class PratoService {
   constructor(private _cliente:HttpClient) { }
 
   listarPratos(): Observable<any>{
-    return this._cliente.get<Prato[]>("http://localhost:8080/prato/listar")
+    return this._cliente.get<Prato[]>("http://localhost:8085/prato/listar")
   }
 
   incluir(prato:Prato): Observable<any>{
-    return this._cliente.post<Prato>("http://localhost:8080/prato/incluir",prato);
+    return this._cliente.post<Prato>("http://localhost:8085/prato/incluir",prato);
   }
 }

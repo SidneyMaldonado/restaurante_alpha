@@ -11,6 +11,6 @@ export class AddclienteService {
   constructor( private _http:HttpClient) { }
 
   incluir (cliente: Cliente): Observable<Cliente>{
-    return this._http.post<Cliente>("http://localhost:8080/cliente/incluir", cliente);
+    return this._http.post<Cliente>("http://localhost:8085/cliente/incluir", cliente);
   }
 }

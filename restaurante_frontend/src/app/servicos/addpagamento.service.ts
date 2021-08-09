@@ -11,7 +11,7 @@ export class AddpagamentoService {
   constructor( private _http: HttpClient) { }
 
   incluir ( pagamento: Pagamento): Observable<Pagamento>{
-    return this._http.post<Pagamento>("http://localhost:8080/pagamento/incluir", pagamento);
+    return this._http.post<Pagamento>("http://localhost:8085/pagamento/incluir", pagamento);
   }
 
 }

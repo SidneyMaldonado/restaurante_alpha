@@ -14,7 +14,7 @@ export class ListaprodutoprecoService {
 
   listarProdutoPreco(): Observable<any>{
     
-    return this._http.get<ViewListaProdutoPreco>("http://localhost:8080/views/listarProdutoPreco");
+    return this._http.get<ViewListaProdutoPreco>("http://localhost:8085/views/listarProdutoPreco");
   }
 
 

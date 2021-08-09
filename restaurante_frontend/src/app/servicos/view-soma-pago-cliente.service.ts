@@ -11,7 +11,7 @@ export class ViewSomaPagoClienteService {
   constructor( private http: HttpClient) { }
 
   listarSomaPagoCliente(): Observable<any> {
-    return this.http.get<ViewSomaPagoCliente>("http://localhost:8080/views/listarSomaPagoCliente");
+    return this.http.get<ViewSomaPagoCliente>("http://localhost:8085/views/listarSomaPagoCliente");
   }
 
 

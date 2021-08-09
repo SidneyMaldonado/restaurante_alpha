@@ -4,6 +4,7 @@ import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
+import { HelloComponent } from './hello/hello.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirProdutoComponent } from './incluir-produto/incluir-produto.component';
 import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncionario.component';
@@ -53,8 +54,8 @@ const routes: Routes = [
 {path:'listarprodutofuncionario', component: ListarprodfuncionarioComponent}, 
 {path:'listarclientesatendidos', component:ClientesatendidosComponent },
 {path: 'listasetor', component: ListarsetorComponent},
-{path: 'listapratoporpedido', component: ViewQtdPratosPedidoComponent}
- 
+{path: 'listapratoporpedido', component: ViewQtdPratosPedidoComponent},
+{path: "hello", component: HelloComponent}
 ];
 
 @NgModule({

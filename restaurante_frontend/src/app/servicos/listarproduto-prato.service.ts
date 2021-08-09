@@ -13,7 +13,7 @@ export class ListarprodutoPratoService {
 
   listarprodutoprato():Observable<any>{
 
-    return this._http.get<ListarProdutoPrato[]>("http://localhost:8080/views/listarprodutospratos");
+    return this._http.get<ListarProdutoPrato[]>("http://localhost:8085/views/listarprodutospratos");
   }
 }
 

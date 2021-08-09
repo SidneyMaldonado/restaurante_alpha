@@ -11,11 +11,11 @@ export class ProdutoService {
   constructor(private _produto:HttpClient) { }
 
   ListarProduto():Observable<any>{
-    return this._produto.get<Produto[]>("http://localhost:8080/produto/listar")
+    return this._produto.get<Produto[]>("http://localhost:8085/produto/listar")
   }
 
   IncluirProduto(produto: Produto): Observable<any>{
-    return this._produto.post<Produto[]>("http://localhost:8080/produto/incluir", produto)
+    return this._produto.post<Produto[]>("http://localhost:8085/produto/incluir", produto)
   }
 
   // testar 1

@@ -11,7 +11,7 @@ export class ClientesatendidosService {
   constructor(private cliente :HttpClient) { }
   
   listarClientesAtendidos(): Observable<any>{
-    return this.cliente.get<ListarClientesAtendidos[]>("http://localhost:8080/views/listarClientesAtendidos")
+    return this.cliente.get<ListarClientesAtendidos[]>("http://localhost:8085/views/listarClientesAtendidos")
   }
 }
 

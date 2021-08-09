@@ -12,6 +12,6 @@ export class ListarcontapratospedidosService {
 
   listarContaPratoPedidos(): Observable<any>{
 
-    return this._http.get<ViewContaPratosPedidos>("http://localhost:8080/views/listarContaPratoPedidos");
+    return this._http.get<ViewContaPratosPedidos>("http://localhost:8085/views/listarContaPratoPedidos");
   }
 }

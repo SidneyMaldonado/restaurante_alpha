@@ -11,7 +11,7 @@ export class ListarclienteordemalfabeticaService {
   constructor(private _http:HttpClient) { }
  listarclienteordemalfabetica():Observable<any>{
 
-    return this._http.get<ListarClienteOrdemAlfabetica[]>("http://localhost:8080/views/ListarClientesOrdemAlfabetica")
+    return this._http.get<ListarClienteOrdemAlfabetica[]>("http://localhost:8085/views/ListarClientesOrdemAlfabetica")
 
  }
 }

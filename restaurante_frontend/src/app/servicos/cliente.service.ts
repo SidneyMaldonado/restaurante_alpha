@@ -8,10 +8,12 @@ import { Cliente } from 'src/entidades/Cliente';
 })
 export class ClienteService {
 
+  private enderecoServidor: string = "http://localhost:8085/";
+
   constructor( private _http:HttpClient) { }
 
   Listar(): Observable<any>{
-    return this._http.get<Cliente[]>("http://localhost:8080/cliente/listar");
+    return this._http.get<Cliente[]>( this.enderecoServidor + "cliente/listar");
   }
 
 
