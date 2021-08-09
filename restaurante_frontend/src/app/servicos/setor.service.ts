@@ -11,7 +11,7 @@ export class SetorService {
   constructor( private servico:HttpClient) { }
 
   ListarSetor():Observable<any>{
-    return this.servico.get<Setor[]>("http://localhost:8080/setor/listar")
+    return this.servico.get<Setor[]>("http://localhost:8085/setor/listar")
 
   }
 }

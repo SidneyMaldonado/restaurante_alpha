@@ -27,6 +27,7 @@ import { IncluirfuncionarioComponent } from './incluirfuncionario/incluirfuncion
 import { ListarprodfuncionarioComponent } from './listarprodfuncionario/listarprodfuncionario.component';
 import { ClientesatendidosComponent } from './clientesatendidos/clientesatendidos.component';
 import { ListarsetorComponent } from './listarsetor/listarsetor.component';
+import { HelloComponent } from './hello/hello.component';
  
 
 
@@ -54,7 +55,8 @@ import { ListarsetorComponent } from './listarsetor/listarsetor.component';
     IncluirfuncionarioComponent,
     ListarprodfuncionarioComponent,
     ClientesatendidosComponent,
-    ListarsetorComponent  
+    ListarsetorComponent,
+    HelloComponent  
  
 
   ],

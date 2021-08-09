@@ -12,7 +12,7 @@ export class ListarprodutofuncionarioService {
 
   listarprodutofuncionario():Observable<any>{
 
-    return this._http.get<ListarProdutoFuncionario[]>("http://localhost:8080/views/listarprodutofuncionario");
+    return this._http.get<ListarProdutoFuncionario[]>("http://localhost:8085/views/listarprodutofuncionario");
 
   }
 }

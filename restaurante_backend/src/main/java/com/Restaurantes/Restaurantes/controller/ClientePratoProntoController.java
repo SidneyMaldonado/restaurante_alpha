@@ -13,7 +13,7 @@ import com.Restaurantes.Restaurantes.repositorio.ClientePratoProntoRepositorio;
 
 @RestController
 @RequestMapping("clientepratopronto")
-@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:9876"} )
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8090", "http://localhost:9876"} )
 public class ClientePratoProntoController {
 	
 	@Autowired

@@ -13,7 +13,7 @@ export class ServicologinService {
   constructor( private servico:HttpClient) { }
 
     fazerLogin(login: Login): Observable<any>{
-      return this.servico.post<Autorizar>("http://localhost:8080/login/logar", login);
+      return this.servico.post<Autorizar>("http://localhost:8085/login/logar", login);
     }
 
     somar( a: number, b: number){

@@ -12,6 +12,6 @@ export class ListarpratoprontoService {
 
   listarpratopronto(): Observable<any>{
 
-    return this._http.get<PratoPronto[]>("http://localhost:8080/clientepratopronto/listar");
+    return this._http.get<PratoPronto[]>("http://localhost:8085/clientepratopronto/listar");
   }
 }

@@ -12,6 +12,6 @@ export class ViewQtdPratosPedidoService {
   constructor( private http: HttpClient) { }
 
   listarTotalPratosPedido(): Observable<any>{
-    return this.http.get<ViewQtdPratosPedido>("http://localhost:8080/views/totalpratospedido");
+    return this.http.get<ViewQtdPratosPedido>("http://localhost:8085/views/totalpratospedido");
   }
 }

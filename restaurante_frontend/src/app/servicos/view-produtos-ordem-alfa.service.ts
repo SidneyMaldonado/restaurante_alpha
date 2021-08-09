@@ -11,6 +11,6 @@ export class ViewProdutosOrdemAlfaService {
   constructor(private http: HttpClient) { }
 
   listarProdutosAlfa(): Observable<any>{
-    return this.http.get<ViewProdutosAlfa>("http://localhost:8080/views/produtosordemalfabetica");
+    return this.http.get<ViewProdutosAlfa>("http://localhost:8085/views/produtosordemalfabetica");
   }
 }
